@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinesweeperAPI", "MinesweeperAPI\MinesweeperAPI.vcxproj", "{D0E64D95-D5D3-442F-9040-50789DD110F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinesweeperTests", "MinesweeperTests\MinesweeperTests.vcxproj", "{D21B73B6-EA1F-4863-86F8-C7F3CDCC821B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0E64D95-D5D3-442F-9040-50789DD110F2} = {D0E64D95-D5D3-442F-9040-50789DD110F2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinesweeperUI", "MinesweeperUI\MinesweeperUI.vcxproj", "{7D90F6BC-25DB-41AC-ACD5-5C89D12B4069}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0E64D95-D5D3-442F-9040-50789DD110F2} = {D0E64D95-D5D3-442F-9040-50789DD110F2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0E64D95-D5D3-442F-9040-50789DD110F2}.Debug|x64.ActiveCfg = Debug|x64
+		{D0E64D95-D5D3-442F-9040-50789DD110F2}.Debug|x64.Build.0 = Debug|x64
+		{D0E64D95-D5D3-442F-9040-50789DD110F2}.Debug|x86.ActiveCfg = Debug|Win32
+		{D0E64D95-D5D3-442F-9040-50789DD110F2}.Debug|x86.Build.0 = Debug|Win32
+		{D0E64D95-D5D3-442F-9040-50789DD110F2}.Release|x64.ActiveCfg = Release|x64
+		{D0E64D95-D5D3-442F-9040-50789DD110F2}.Release|x64.Build.0 = Release|x64
+		{D0E64D95-D5D3-442F-9040-50789DD110F2}.Release|x86.ActiveCfg = Release|Win32
+		{D0E64D95-D5D3-442F-9040-50789DD110F2}.Release|x86.Build.0 = Release|Win32
+		{D21B73B6-EA1F-4863-86F8-C7F3CDCC821B}.Debug|x64.ActiveCfg = Debug|x64
+		{D21B73B6-EA1F-4863-86F8-C7F3CDCC821B}.Debug|x64.Build.0 = Debug|x64
+		{D21B73B6-EA1F-4863-86F8-C7F3CDCC821B}.Debug|x86.ActiveCfg = Debug|Win32
+		{D21B73B6-EA1F-4863-86F8-C7F3CDCC821B}.Debug|x86.Build.0 = Debug|Win32
+		{D21B73B6-EA1F-4863-86F8-C7F3CDCC821B}.Release|x64.ActiveCfg = Release|x64
+		{D21B73B6-EA1F-4863-86F8-C7F3CDCC821B}.Release|x64.Build.0 = Release|x64
+		{D21B73B6-EA1F-4863-86F8-C7F3CDCC821B}.Release|x86.ActiveCfg = Release|Win32
+		{D21B73B6-EA1F-4863-86F8-C7F3CDCC821B}.Release|x86.Build.0 = Release|Win32
+		{7D90F6BC-25DB-41AC-ACD5-5C89D12B4069}.Debug|x64.ActiveCfg = Debug|x64
+		{7D90F6BC-25DB-41AC-ACD5-5C89D12B4069}.Debug|x64.Build.0 = Debug|x64
+		{7D90F6BC-25DB-41AC-ACD5-5C89D12B4069}.Debug|x86.ActiveCfg = Debug|x64
+		{7D90F6BC-25DB-41AC-ACD5-5C89D12B4069}.Debug|x86.Build.0 = Debug|x64
+		{7D90F6BC-25DB-41AC-ACD5-5C89D12B4069}.Release|x64.ActiveCfg = Release|x64
+		{7D90F6BC-25DB-41AC-ACD5-5C89D12B4069}.Release|x64.Build.0 = Release|x64
+		{7D90F6BC-25DB-41AC-ACD5-5C89D12B4069}.Release|x86.ActiveCfg = Release|x64
+		{7D90F6BC-25DB-41AC-ACD5-5C89D12B4069}.Release|x86.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BFD9C9E-0182-4FFD-A85C-41429EA1ED2B}
+	EndGlobalSection
+EndGlobal
