@@ -1,0 +1,83 @@
+\doxysection{IMinesweeper\+Game Class Reference}
+\hypertarget{classIMinesweeperGame}{}\label{classIMinesweeperGame}\index{IMinesweeperGame@{IMinesweeperGame}}
+
+
+Interface class for the Minesweeper game.  
+
+
+
+
+{\ttfamily \#include $<$IMinesweeper\+Game.\+h$>$}
+
+Inheritance diagram for IMinesweeper\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIMinesweeperGame}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classIMinesweeperGame_a280a32b35ab85a0ee69f0f01a7ce58f8}{Add\+Minesweeper\+Listener}} (\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeper\+Listener}} \texorpdfstring{$\ast$}{*}listener)=0
+\begin{DoxyCompactList}\small\item\em Method to add a listener \doxylink{classIMinesweeperListener}{IMinesweeper\+Listener} pointer to the game. \end{DoxyCompactList}\item 
+\Hypertarget{classIMinesweeperGame_ae2324130b040af5a5642bce7e66cea8d}\label{classIMinesweeperGame_ae2324130b040af5a5642bce7e66cea8d} 
+virtual bool {\bfseries Remove\+Minesweeper\+Listener} (\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeper\+Listener}} \texorpdfstring{$\ast$}{*}listener)=0
+\item 
+\Hypertarget{classIMinesweeperGame_ad9eadb543d467c0e26ad3049d42a6ac0}\label{classIMinesweeperGame_ad9eadb543d467c0e26ad3049d42a6ac0} 
+virtual void {\bfseries Generate\+Mines} (int clicked\+Cell\+Row, int clicked\+Cell\+Column)=0
+\item 
+\Hypertarget{classIMinesweeperGame_a8d7c1ab751bb5bf35fdcdf60fe00c0c8}\label{classIMinesweeperGame_a8d7c1ab751bb5bf35fdcdf60fe00c0c8} 
+virtual void {\bfseries Restart\+Game} ()=0
+\item 
+\Hypertarget{classIMinesweeperGame_a69386b8c618f3c525bfcfbb0b2c60f4b}\label{classIMinesweeperGame_a69386b8c618f3c525bfcfbb0b2c60f4b} 
+virtual void {\bfseries Game\+Over} ()=0
+\item 
+\Hypertarget{classIMinesweeperGame_a784e0b8ff3fbd1462576d23a4116834b}\label{classIMinesweeperGame_a784e0b8ff3fbd1462576d23a4116834b} 
+virtual void {\bfseries Check\+Victory} ()=0
+\item 
+\Hypertarget{classIMinesweeperGame_af36f399a040175100faecb2580da54e0}\label{classIMinesweeperGame_af36f399a040175100faecb2580da54e0} 
+virtual void {\bfseries End\+Game} ()=0
+\item 
+\Hypertarget{classIMinesweeperGame_a4dceec18465a30ff9c051364e8698af6}\label{classIMinesweeperGame_a4dceec18465a30ff9c051364e8698af6} 
+virtual void {\bfseries Countdown\+Timer} ()=0
+\item 
+\Hypertarget{classIMinesweeperGame_a68cebf2d3fd0b5c488e9962ad18975ad}\label{classIMinesweeperGame_a68cebf2d3fd0b5c488e9962ad18975ad} 
+virtual void {\bfseries Reveal\+Cells} (\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*}cell)=0
+\item 
+\Hypertarget{classIMinesweeperGame_a2cbf24fa98286e7dfef8c6e31f7ff153}\label{classIMinesweeperGame_a2cbf24fa98286e7dfef8c6e31f7ff153} 
+virtual void {\bfseries Check\+Cell} (\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*}cell)=0
+\item 
+\Hypertarget{classIMinesweeperGame_a6c65ea5496723f54083c025316b6c91b}\label{classIMinesweeperGame_a6c65ea5496723f54083c025316b6c91b} 
+virtual void {\bfseries Check\+Adjacent\+Mines} (\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*}cell)=0
+\item 
+\Hypertarget{classIMinesweeperGame_aefadeb564031b70b845304ea8b2e929a}\label{classIMinesweeperGame_aefadeb564031b70b845304ea8b2e929a} 
+virtual void {\bfseries Flag\+Cell} (\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*}cell)=0
+\item 
+\Hypertarget{classIMinesweeperGame_a5b428c7c4e29bcb2a78fedb56aef1625}\label{classIMinesweeperGame_a5b428c7c4e29bcb2a78fedb56aef1625} 
+virtual void {\bfseries Set\+Settings} (int width, int height, int mines\+Number, std\+::string theme, int timer)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface class for the Minesweeper game. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIMinesweeperGame_a280a32b35ab85a0ee69f0f01a7ce58f8}\index{IMinesweeperGame@{IMinesweeperGame}!AddMinesweeperListener@{AddMinesweeperListener}}
+\index{AddMinesweeperListener@{AddMinesweeperListener}!IMinesweeperGame@{IMinesweeperGame}}
+\doxysubsubsection{\texorpdfstring{AddMinesweeperListener()}{AddMinesweeperListener()}}
+{\footnotesize\ttfamily \label{classIMinesweeperGame_a280a32b35ab85a0ee69f0f01a7ce58f8} 
+virtual bool IMinesweeper\+Game\+::\+Add\+Minesweeper\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeper\+Listener}} \texorpdfstring{$\ast$}{*}}]{listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to add a listener \doxylink{classIMinesweeperListener}{IMinesweeper\+Listener} pointer to the game. 
+
+
+
+Implemented in \mbox{\hyperlink{classMinesweeperGame_a91363ac33df15f7e31dc07d040687c69}{Minesweeper\+Game}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Minesweeper\+API/IMinesweeper\+Game.\+h\end{DoxyCompactItemize}

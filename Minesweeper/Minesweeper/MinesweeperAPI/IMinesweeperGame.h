@@ -3,9 +3,11 @@
 #include "IMinesweeperListener.h"
 #include "MinesweeperCell.h"
 
+//! Interface class for the Minesweeper game
 class IMinesweeperGame
 {
 public:
+	//! Method to add a listener IMinesweeperListener pointer to the game
 	virtual bool AddMinesweeperListener(IMinesweeperListener* listener) = 0;
 	virtual bool RemoveMinesweeperListener(IMinesweeperListener* listener) = 0;
 

@@ -30,6 +30,9 @@
     <ClCompile Include="MinesweeperGame.cpp" />
     <ClCompile Include="MinesweeperCell.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

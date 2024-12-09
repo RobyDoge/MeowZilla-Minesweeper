@@ -1,0 +1,29 @@
+\doxysection{Minesweeper\+Cell.\+h}
+\hypertarget{MinesweeperCell_8h_source}{}\label{MinesweeperCell_8h_source}\index{MinesweeperAPI/MinesweeperCell.h@{MinesweeperAPI/MinesweeperCell.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}ECellState.h"{}};}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column);}
+\DoxyCodeLine{00009\ \ \ \ \ ECellState\ GetState();}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ SetState(ECellState\ state);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ GetAdjacentMines();}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ AddAdjacentMine();}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ GetRow();}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ GetColumn();}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsMine()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ ECellState\ m\_state;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ adjacentMines;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ row;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ column;}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+
+\end{DoxyCode}
