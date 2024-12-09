@@ -25,6 +25,7 @@
     <ClInclude Include="IMinesweeperListener.h" />
     <ClInclude Include="MinesweeperGame.h" />
     <ClInclude Include="MinesweeperCell.h" />
+    <ClInclude Include="Themes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MinesweeperGame.cpp" />

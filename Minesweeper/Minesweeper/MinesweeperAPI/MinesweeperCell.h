@@ -6,18 +6,21 @@ class MinesweeperCell
 {
 public:
 	MinesweeperCell(int row, int column);
+
+public:
 	ECellState GetState();
-	void SetState(ECellState state);
 	int GetAdjacentMines();
-	void AddAdjacentMine();
 	int GetRow();
 	int GetColumn();
+
+	void SetState(ECellState state);
+	void AddAdjacentMine();
 	bool IsMine() const;
 
 private:
 	ECellState m_state;
-	int adjacentMines;
-	int row;
-	int column;
+	int m_adjacentMines;
+	int m_row;
+	int m_column;
 };
 

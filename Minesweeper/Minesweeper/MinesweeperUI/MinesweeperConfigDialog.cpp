@@ -1,4 +1,5 @@
 ﻿#include "MinesweeperConfigDialog.h"
+#include "Themes.h"
 #include <QVBoxLayout>
 #include <QLabel>
 
@@ -31,7 +32,12 @@ MinesweeperConfigDialog::MinesweeperConfigDialog(QWidget* parent)
 	// Tema
 	layout->addWidget(new QLabel("Theme:"));
 	m_themeComboBox = new QComboBox(this);
-	m_themeComboBox->addItems({"Dark Blue", "Starry Sky", "Aurora Borealis", "Christmas"});
+	m_themeComboBox->addItems({
+		QString::fromStdString(DARK_BLUE),
+		QString::fromStdString(STARRY_SKY),
+		QString::fromStdString(AURORA_BOREALIS),
+		QString::fromStdString(CHRISTMAS)});
+
 	layout->addWidget(m_themeComboBox);
 
 	// Timer
@@ -63,6 +69,7 @@ int MinesweeperConfigDialog::GetWidth() const { return m_widthSpinBox->value(); 
 int MinesweeperConfigDialog::GetHeight() const { return m_heightSpinBox->value(); }
 int MinesweeperConfigDialog::GetMines() const { return m_minesSpinBox->value(); }
 QString MinesweeperConfigDialog::GetTheme() const { return m_themeComboBox->currentText(); }
+
 int MinesweeperConfigDialog::GetTimer() const
 {
 	return m_timerCheckBox->isChecked() ? m_timerSpinBox->value() : -1;

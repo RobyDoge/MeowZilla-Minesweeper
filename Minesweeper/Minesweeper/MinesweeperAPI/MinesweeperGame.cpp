@@ -1,4 +1,5 @@
 ﻿#include "MinesweeperGame.h"
+#include "Themes.h"
 
 MinesweeperGame::MinesweeperGame()
 {
@@ -7,7 +8,7 @@ MinesweeperGame::MinesweeperGame()
 	m_minesNumber = 10;
 	m_flagsNumber = m_minesNumber;
 	m_gameState = EGameState::FIRSTCLICK;
-	m_theme = "Dark Blue";
+	m_theme = DARK_BLUE;
 	m_timer = -1;
 	SetUnrevealedCells();
 }
@@ -86,7 +87,7 @@ void MinesweeperGame::RevealCells(MinesweeperCell* cell)
 		if (filledCells.front()->GetAdjacentMines() == 0)
 			for (int row = filledCells.front()->GetRow() - 1; row <= filledCells.front()->GetRow() + 1; row++)
 				for (int column = filledCells.front()->GetColumn() - 1; column <= filledCells.front()->GetColumn() + 1; column++)
-					if (!isOutOfBounds(row, column))
+					if (!IsOutOfBounds(row, column))
 						if (!(row == filledCells.front()->GetRow() && column == filledCells.front()->GetColumn())
 							&& (m_cells[row][column].GetState() == ECellState::UNREVEALED || m_cells[row][column].GetState() == ECellState::FLAGGED))
 						{
@@ -135,7 +136,7 @@ void MinesweeperGame::CheckAdjacentMines(MinesweeperCell* cell)
 {
 	for (int x = cell->GetRow() - 1; x <= cell->GetRow() + 1; x++)
 		for (int y = cell->GetColumn() - 1; y <= cell->GetColumn() + 1; y++)
-			if (!isOutOfBounds(x, y))
+			if (!IsOutOfBounds(x, y))
 				if (m_cells[x][y].GetState() == ECellState::MINE || m_cells[x][y].GetState() == ECellState::FLAGGED_MINE)
 					cell->AddAdjacentMine();
 }
@@ -263,7 +264,7 @@ void MinesweeperGame::SetUnrevealedCells()
 	}
 }
 
-bool MinesweeperGame::isOutOfBounds(int row, int column)
+bool MinesweeperGame::IsOutOfBounds(int row, int column)
 {
 	if (row < 0 || row >= m_height || column < 0 || column >= m_width)
 		return true;
@@ -325,7 +326,7 @@ void MinesweeperGame::SetTimer(int timer)
 	m_timer = timer;
 }
 
-std::string MinesweeperGame::GetTheme()
+std::string MinesweeperGame::GetTheme() const
 {
 	return m_theme;
 }

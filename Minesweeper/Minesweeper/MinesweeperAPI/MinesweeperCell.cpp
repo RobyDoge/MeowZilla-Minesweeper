@@ -3,10 +3,9 @@
 MinesweeperCell::MinesweeperCell(int row, int column)
 {
 	m_state = ECellState::UNREVEALED;
-	adjacentMines = 0;
-	this->row = row;
-	this->column = column;
-
+	m_adjacentMines = 0;
+	this->m_row = row;
+	this->m_column = column;
 }
 
 ECellState MinesweeperCell::GetState()
@@ -14,34 +13,32 @@ ECellState MinesweeperCell::GetState()
 	return m_state;
 }
 
+int MinesweeperCell::GetAdjacentMines()
+{
+	return m_adjacentMines;
+}
+
+int MinesweeperCell::GetRow()
+{
+	return m_row;
+}
+
+int MinesweeperCell::GetColumn()
+{
+	return m_column;
+}
+
 void MinesweeperCell::SetState(ECellState state)
 {
 	m_state = state;
 }
 
-int MinesweeperCell::GetAdjacentMines()
-{
-	return adjacentMines;
-}
-
 void MinesweeperCell::AddAdjacentMine()
 {
-	adjacentMines++;
-}
-
-int MinesweeperCell::GetRow()
-{
-	return row;
-}
-
-int MinesweeperCell::GetColumn()
-{
-	return column;
+	m_adjacentMines++;
 }
 
 bool MinesweeperCell::IsMine() const
 {
-	
-		return (m_state == ECellState::MINE || m_state == ECellState::FLAGGED_MINE);
-	
+	return (m_state == ECellState::MINE || m_state == ECellState::FLAGGED_MINE);
 }

@@ -15,6 +15,8 @@ public:
 
 	MinesweeperGame();
 
+public:
+
 	bool AddMinesweeperListener(IMinesweeperListener* listener) override;
 	bool RemoveMinesweeperListener(IMinesweeperListener* listener) override;
 	void GenerateMines(int clickedCellRow, int clickedCellColumn) override;
@@ -24,13 +26,13 @@ public:
 	void FlagCell(MinesweeperCell* cell) override;
 	void SetSettings(int width, int height, int minesNumber, std::string theme, int timer) override;
 
-	// Adaugã aceste metode în MinesweeperGame.h
+public:
 	void SetWidth(int width);
 	void SetHeight(int height);
 	void SetMinesNumber(int minesNumber);
 	void SetTheme(const std::string& theme);
 	void SetTimer(int timer);
-	std::string GetTheme();
+	std::string GetTheme() const;
 	int GetTimer();
 	int GetWidth();
 	int GetHeight();
@@ -42,7 +44,7 @@ public:
 private:
 	void CheckAdjacentMines(MinesweeperCell* cell) override;
 	void SetUnrevealedCells();
-	bool isOutOfBounds(int row, int column);
+	bool IsOutOfBounds(int row, int column);
 	void GameOver() override;
 	void CheckVictory() override;
 	void EndGame() override;
