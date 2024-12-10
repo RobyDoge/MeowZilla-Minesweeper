@@ -71,13 +71,13 @@ void MinesweeperUI::OnRestartClicked()
 
 void MinesweeperUI::OnCellLeftClick(int row, int column)
 {
-	MinesweeperCell* cell = m_minesweeperGame->GetCell(row, column);
+	CellPtr cell = m_minesweeperGame->GetCell(row, column);
 	m_minesweeperGame->CheckCell(cell);
 }
 
 void MinesweeperUI::OnCellRightClick(int row, int column)
 {
-	MinesweeperCell* cell = m_minesweeperGame->GetCell(row, column);
+	CellPtr cell = m_minesweeperGame->GetCell(row, column);
 	m_minesweeperGame->FlagCell(cell);
 }
 

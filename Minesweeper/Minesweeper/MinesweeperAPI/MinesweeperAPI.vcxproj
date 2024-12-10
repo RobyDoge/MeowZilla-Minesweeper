@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="ECellState.h" />
     <ClInclude Include="EGameState.h" />
+    <ClInclude Include="ICell.h" />
     <ClInclude Include="IMinesweeperGame.h" />
     <ClInclude Include="IMinesweeperListener.h" />
     <ClInclude Include="MinesweeperGame.h" />

@@ -21,9 +21,9 @@ public:
 	bool RemoveMinesweeperListener(IMinesweeperListener* listener) override;
 	void GenerateMines(int clickedCellRow, int clickedCellColumn) override;
 	void RestartGame() override;
-	void RevealCells(MinesweeperCell* cell) override;
-	void CheckCell(MinesweeperCell* cell) override;
-	void FlagCell(MinesweeperCell* cell) override;
+	void RevealCells(CellPtr cell) override;
+	void CheckCell(CellPtr cell) override;
+	void FlagCell(CellPtr cell) override;
 	void SetSettings(int width, int height, int minesNumber, std::string theme, int timer) override;
 
 public:
@@ -36,13 +36,13 @@ public:
 	int GetTimer() override;
 	int GetWidth() override;
 	int GetHeight() override;
-	std::vector<std::vector<MinesweeperCell>> GetCells();
-	MinesweeperCell* GetCell(int row, int column) override;
+	std::vector<std::vector<CellPtr>> GetCells();
+	CellPtr GetCell(int row, int column) override;
 	EGameState GetGameState();
 	int GetFlagsNumber() override;
 
 private:
-	void CheckAdjacentMines(MinesweeperCell* cell) override;
+	void CheckAdjacentMines(CellPtr cell) override;
 	void SetUnrevealedCells();
 	bool IsOutOfBounds(int row, int column);
 	void GameOver() override;
@@ -51,7 +51,7 @@ private:
 	void CountdownTimer() override;
 
 	std::vector<IMinesweeperListener*> m_listeners;
-	std::vector<std::vector<MinesweeperCell>> m_cells;
+	std::vector<std::vector<CellPtr>> m_cells;
 	EGameState m_gameState;
 	int m_width;
 	int m_height;

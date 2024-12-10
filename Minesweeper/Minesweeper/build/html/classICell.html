@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minesweeper: IMinesweeperListener Class Reference</title>
+<title>Minesweeper: ICell Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('classIMinesweeperListener.html',''); initResizable(true); });
+$(function(){initNavTree('classICell.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -99,41 +99,53 @@ $(function(){initNavTree('classIMinesweeperListener.html',''); initResizable(tru
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classIMinesweeperListener-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">IMinesweeperListener Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+<a href="classICell-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">ICell Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for ICell:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classICell.png" usemap="#ICell_map" alt=""/>
+  <map id="ICell_map" name="ICell_map">
+<area href="classMinesweeperCell.html" alt="MinesweeperCell" shape="rect" coords="0,56,110,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f383fce841f27bdf860debf2e8c7580" id="r_a0f383fce841f27bdf860debf2e8c7580"><td class="memItemLeft" align="right" valign="top"><a id="a0f383fce841f27bdf860debf2e8c7580" name="a0f383fce841f27bdf860debf2e8c7580"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCellImageChange</b> (CellPtr cell, EGameState gameState, std::string theme)=0</td></tr>
-<tr class="separator:a0f383fce841f27bdf860debf2e8c7580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85353fdd4683e860aec0fed3220214db" id="r_a85353fdd4683e860aec0fed3220214db"><td class="memItemLeft" align="right" valign="top"><a id="a85353fdd4683e860aec0fed3220214db" name="a85353fdd4683e860aec0fed3220214db"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFlagCountChanged</b> (int flagsNumber)=0</td></tr>
-<tr class="separator:a85353fdd4683e860aec0fed3220214db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee5ab9714f733d3751217088557a2a58" id="r_aee5ab9714f733d3751217088557a2a58"><td class="memItemLeft" align="right" valign="top"><a id="aee5ab9714f733d3751217088557a2a58" name="aee5ab9714f733d3751217088557a2a58"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimerChanged</b> (int timer)=0</td></tr>
-<tr class="separator:aee5ab9714f733d3751217088557a2a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f9ca72416eee663dddaeb9368609105" id="r_a6f9ca72416eee663dddaeb9368609105"><td class="memItemLeft" align="right" valign="top"><a id="a6f9ca72416eee663dddaeb9368609105" name="a6f9ca72416eee663dddaeb9368609105"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGameOver</b> ()=0</td></tr>
-<tr class="separator:a6f9ca72416eee663dddaeb9368609105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b8cc73caed437ffbc403ca4c566e09" id="r_a10b8cc73caed437ffbc403ca4c566e09"><td class="memItemLeft" align="right" valign="top"><a id="a10b8cc73caed437ffbc403ca4c566e09" name="a10b8cc73caed437ffbc403ca4c566e09"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWin</b> ()=0</td></tr>
-<tr class="separator:a10b8cc73caed437ffbc403ca4c566e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc62f9202c4c51d95a3cfb2f65486c59" id="r_adc62f9202c4c51d95a3cfb2f65486c59"><td class="memItemLeft" align="right" valign="top"><a id="adc62f9202c4c51d95a3cfb2f65486c59" name="adc62f9202c4c51d95a3cfb2f65486c59"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettingsUpdated</b> (int width, int height, int minesNumber, std::string theme, int timer)=0</td></tr>
-<tr class="separator:adc62f9202c4c51d95a3cfb2f65486c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128606dc1c82cd8fdb6b093d1e7153cf" id="r_a128606dc1c82cd8fdb6b093d1e7153cf"><td class="memItemLeft" align="right" valign="top"><a id="a128606dc1c82cd8fdb6b093d1e7153cf" name="a128606dc1c82cd8fdb6b093d1e7153cf"></a>
+virtual ECellState&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> ()=0</td></tr>
+<tr class="separator:a128606dc1c82cd8fdb6b093d1e7153cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffa1b5494e44aea7ef61244750eae0a" id="r_a6ffa1b5494e44aea7ef61244750eae0a"><td class="memItemLeft" align="right" valign="top"><a id="a6ffa1b5494e44aea7ef61244750eae0a" name="a6ffa1b5494e44aea7ef61244750eae0a"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetAdjacentMines</b> ()=0</td></tr>
+<tr class="separator:a6ffa1b5494e44aea7ef61244750eae0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1424d6c78b294d436fad0c1358fcd4" id="r_a9c1424d6c78b294d436fad0c1358fcd4"><td class="memItemLeft" align="right" valign="top"><a id="a9c1424d6c78b294d436fad0c1358fcd4" name="a9c1424d6c78b294d436fad0c1358fcd4"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetRow</b> ()=0</td></tr>
+<tr class="separator:a9c1424d6c78b294d436fad0c1358fcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c138f030ed6da41e105de214a3eb207" id="r_a8c138f030ed6da41e105de214a3eb207"><td class="memItemLeft" align="right" valign="top"><a id="a8c138f030ed6da41e105de214a3eb207" name="a8c138f030ed6da41e105de214a3eb207"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumn</b> ()=0</td></tr>
+<tr class="separator:a8c138f030ed6da41e105de214a3eb207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e21506de97aa3bbc3aff45302647b2" id="r_ad4e21506de97aa3bbc3aff45302647b2"><td class="memItemLeft" align="right" valign="top"><a id="ad4e21506de97aa3bbc3aff45302647b2" name="ad4e21506de97aa3bbc3aff45302647b2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetState</b> (ECellState state)=0</td></tr>
+<tr class="separator:ad4e21506de97aa3bbc3aff45302647b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08e809e8a8c8e08951fec14e55184d2" id="r_ac08e809e8a8c8e08951fec14e55184d2"><td class="memItemLeft" align="right" valign="top"><a id="ac08e809e8a8c8e08951fec14e55184d2" name="ac08e809e8a8c8e08951fec14e55184d2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAdjacentMine</b> ()=0</td></tr>
+<tr class="separator:ac08e809e8a8c8e08951fec14e55184d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc706c6cb4b089f99146e7430d3c1c4d" id="r_acc706c6cb4b089f99146e7430d3c1c4d"><td class="memItemLeft" align="right" valign="top"><a id="acc706c6cb4b089f99146e7430d3c1c4d" name="acc706c6cb4b089f99146e7430d3c1c4d"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsMine</b> () const =0</td></tr>
+<tr class="separator:acc706c6cb4b089f99146e7430d3c1c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>MinesweeperAPI/<a class="el" href="IMinesweeperListener_8h_source.html">IMinesweeperListener.h</a></li>
+<li>MinesweeperAPI/<a class="el" href="ICell_8h_source.html">ICell.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a></li>
+    <li class="navelem"><a class="el" href="classICell.html">ICell</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

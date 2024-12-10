@@ -1,12 +1,13 @@
 #pragma once
 #include "MinesweeperCell.h"
+#include "ICell.h"
 #include "EGameState.h"
 #include <string>
 
 class IMinesweeperListener
 {
 public:
-	virtual void OnCellImageChange(MinesweeperCell* cell, EGameState gameState, std::string theme) = 0;
+	virtual void OnCellImageChange(CellPtr cell, EGameState gameState, std::string theme) = 0;
 	virtual void OnFlagCountChanged(int flagsNumber) = 0;
 	virtual void OnTimerChanged(int timer) = 0;
 	virtual void OnGameOver() = 0;

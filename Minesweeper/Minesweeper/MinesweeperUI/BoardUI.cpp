@@ -27,7 +27,7 @@ void BoardUI::GenerateBoard(std::string theme)
 	}
 }
 
-void BoardUI::ChangeCellImage(MinesweeperCell* cell, EGameState gameState, std::string theme)
+void BoardUI::ChangeCellImage(CellPtr cell, EGameState gameState, std::string theme)
 {
 	QPixmap revealedImage;
 	ECellState cellState = cell->GetState();

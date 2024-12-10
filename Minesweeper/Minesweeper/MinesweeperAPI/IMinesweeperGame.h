@@ -1,7 +1,7 @@
 #pragma once
 
 #include "IMinesweeperListener.h"
-#include "MinesweeperCell.h"
+#include "ICell.h"
 #include<memory>
 
 using IGamePtr = std::shared_ptr<class IMinesweeperGame>;
@@ -43,20 +43,20 @@ public:
 	*/
 	virtual void CountdownTimer() = 0;
 	//! Method to set the cells to unrevealed
-	virtual void RevealCells(MinesweeperCell* cell) = 0;
+	virtual void RevealCells(CellPtr cell) = 0;
 	/*!
 		This method handles the behavior when a cell in the game is clicked. 
 		It checks the state of the game and the cell and performs appropriate actions such as revealing cells, generating mines, or ending the game.
 	*/
-	virtual void CheckCell(MinesweeperCell* cell) = 0;
+	virtual void CheckCell(CellPtr cell) = 0;
 	//! Method to check the adjacent cells of a cell
 	//! Implemented in MinesweeperGame, private method.
-	virtual void CheckAdjacentMines(MinesweeperCell* cell) = 0;
+	virtual void CheckAdjacentMines(CellPtr cell) = 0;
 	/*!
 		Method to calculate the number of mines adjacent to the given cell.
 		It iterates over all neighboring cells, checks their states, and increments the count of adjacent mines in the given cell if a mine is found. 
 	*/
-	virtual void FlagCell(MinesweeperCell* cell) = 0;
+	virtual void FlagCell(CellPtr cell) = 0;
 	/*!
  		Method to set the settings of the game:
 		- Sets the game window's width and height
@@ -78,7 +78,7 @@ public:
 	//! Getter method that returns the number of flags within the game
 	virtual int GetFlagsNumber() = 0;
 	//! Getter method that returns the Cell at the specified row and column
-	virtual MinesweeperCell* GetCell(int row, int column) = 0;
+	virtual CellPtr GetCell(int row, int column) = 0;
 
 public:
 	//! Method to create a game instance, used so that the UI only interacts with the game through the interface

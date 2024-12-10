@@ -1,21 +1,22 @@
 #pragma once
 
-#include "ECellState.h";
+#include "ICell.h";
 
-class MinesweeperCell
+class MinesweeperCell : public ICell
 {
 public:
+	MinesweeperCell();
 	MinesweeperCell(int row, int column);
 
 public:
-	ECellState GetState();
-	int GetAdjacentMines();
-	int GetRow();
-	int GetColumn();
+	ECellState GetState() override;
+	int GetAdjacentMines() override;
+	int GetRow() override;
+	int GetColumn() override;
 
-	void SetState(ECellState state);
-	void AddAdjacentMine();
-	bool IsMine() const;
+	void SetState(ECellState state) override;
+	void AddAdjacentMine() override;
+	bool IsMine() const override;
 
 private:
 	ECellState m_state;

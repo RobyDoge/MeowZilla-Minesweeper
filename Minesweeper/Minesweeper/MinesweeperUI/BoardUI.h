@@ -15,7 +15,7 @@ private:
 	QWidget* m_window;
 
 public slots:
-	void ChangeCellImage(MinesweeperCell* cell, EGameState state, std::string theme);
+	void ChangeCellImage(CellPtr cell, EGameState state, std::string theme);
 	void InitializeCells(int width, int height, std::string theme);
 };
 

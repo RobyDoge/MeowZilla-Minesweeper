@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['iminesweepergame_0',['IMinesweeperGame',['../classIMinesweeperGame.html',1,'']]],
-  ['iminesweeperlistener_1',['IMinesweeperListener',['../classIMinesweeperListener.html',1,'']]]
+  ['icell_0',['ICell',['../classICell.html',1,'']]],
+  ['iminesweepergame_1',['IMinesweeperGame',['../classIMinesweeperGame.html',1,'']]],
+  ['iminesweeperlistener_2',['IMinesweeperListener',['../classIMinesweeperListener.html',1,'']]]
 ];

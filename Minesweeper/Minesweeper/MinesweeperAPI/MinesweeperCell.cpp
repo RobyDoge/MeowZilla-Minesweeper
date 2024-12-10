@@ -1,5 +1,10 @@
 #include "MinesweeperCell.h"
 
+MinesweeperCell::MinesweeperCell()
+{
+	// Empty
+}
+
 MinesweeperCell::MinesweeperCell(int row, int column)
 {
 	m_state = ECellState::UNREVEALED;

@@ -23,7 +23,7 @@ void MinesweeperListenerUI::OnSettingsUpdated(int width, int height, int minesNu
 	emit SettingsChanged(width, height, theme);
 }
 
-void MinesweeperListenerUI::OnCellImageChange(MinesweeperCell* cell, EGameState gameState, std::string theme)
+void MinesweeperListenerUI::OnCellImageChange(CellPtr cell, EGameState gameState, std::string theme)
 {
 	emit CellImageChanged(cell, gameState, theme);
 }
