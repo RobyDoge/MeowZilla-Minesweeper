@@ -117,10 +117,12 @@ void MinesweeperGame::RevealCells(MinesweeperCell* cell)
 void MinesweeperGame::CheckCell(MinesweeperCell* cell)
 {
 	if (m_gameState == EGameState::FIRSTCLICK || m_gameState == EGameState::INGAME)
+	{	
 		if (cell->GetState() == ECellState::UNREVEALED)
 		{
 			if (m_revealedCells == 0)
 				GenerateMines(cell->GetRow(), cell->GetColumn());
+				
 			RevealCells(cell);
 			CheckVictory();
 		}
@@ -128,8 +130,7 @@ void MinesweeperGame::CheckCell(MinesweeperCell* cell)
 		{
 			GameOver();
 		}
-
-
+	}
 }
 
 void MinesweeperGame::CheckAdjacentMines(MinesweeperCell* cell)

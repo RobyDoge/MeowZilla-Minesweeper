@@ -6,25 +6,41 @@
 \DoxyCodeLine{00002\ }
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}IMinesweeperListener.h"{}}}
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}MinesweeperCell.h"{}}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIMinesweeperGame}{IMinesweeperGame}}}
-\DoxyCodeLine{00008\ \{}
-\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIMinesweeperGame_a280a32b35ab85a0ee69f0f01a7ce58f8}{AddMinesweeperListener}}(\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeperListener}}*\ listener)\ =\ 0;}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ RemoveMinesweeperListener(\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeperListener}}*\ listener)\ =\ 0;}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ GenerateMines(\textcolor{keywordtype}{int}\ clickedCellRow,\ \textcolor{keywordtype}{int}\ clickedCellColumn)\ =\ 0;}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ RestartGame()\ =\ 0;}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ GameOver()\ =\ 0;}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ CheckVictory()\ =\ 0;}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ EndGame()\ =\ 0;}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ CountdownTimer()\ =\ 0;}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ RevealCells(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ =\ 0;}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ CheckCell(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ =\ 0;}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ CheckAdjacentMines(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ =\ 0;}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ FlagCell(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ =\ 0;}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ SetSettings(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{int}\ minesNumber,\ std::string\ theme,\ \textcolor{keywordtype}{int}\ timer)\ =\ 0;}
-\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }IGamePtr\ =\ std::shared\_ptr<class\ IMinesweeperGame>;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIMinesweeperGame}{IMinesweeperGame}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIMinesweeperGame_a280a32b35ab85a0ee69f0f01a7ce58f8}{AddMinesweeperListener}}(\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeperListener}}*\ listener)\ =\ 0;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIMinesweeperGame_ae2324130b040af5a5642bce7e66cea8d}{RemoveMinesweeperListener}}(\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeperListener}}*\ listener)\ =\ 0;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_ad9eadb543d467c0e26ad3049d42a6ac0}{GenerateMines}}(\textcolor{keywordtype}{int}\ clickedCellRow,\ \textcolor{keywordtype}{int}\ clickedCellColumn)\ =\ 0;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_a8d7c1ab751bb5bf35fdcdf60fe00c0c8}{RestartGame}}()\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_a69386b8c618f3c525bfcfbb0b2c60f4b}{GameOver}}()\ =\ 0;}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ \ \ \ /*******************************************/}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_a784e0b8ff3fbd1462576d23a4116834b}{CheckVictory}}()\ =\ 0;}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ \ \ \ /*******************************************/}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_af36f399a040175100faecb2580da54e0}{EndGame}}()\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_a4dceec18465a30ff9c051364e8698af6}{CountdownTimer}}()\ =\ 0;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_a68cebf2d3fd0b5c488e9962ad18975ad}{RevealCells}}(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ =\ 0;}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_a2cbf24fa98286e7dfef8c6e31f7ff153}{CheckCell}}(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ =\ 0;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_a6c65ea5496723f54083c025316b6c91b}{CheckAdjacentMines}}(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ =\ 0;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_aefadeb564031b70b845304ea8b2e929a}{FlagCell}}(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ =\ 0;}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIMinesweeperGame_a5b428c7c4e29bcb2a78fedb56aef1625}{SetSettings}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{int}\ minesNumber,\ std::string\ theme,\ \textcolor{keywordtype}{int}\ timer)\ =\ 0;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classIMinesweeperGame_acf098f756199b57a50b453f667c5ad09}{GetTheme}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIMinesweeperGame_a0b050ab395689aea1e41d49ccda6ad9e}{GetTimer}}()\ =\ 0;}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIMinesweeperGame_a5498b89f2f702adfadccdf0abd101ec6}{GetWidth}}()\ =\ 0;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIMinesweeperGame_abd8e9fe7e1abf395260288f170a98715}{GetHeight}}()\ =\ 0;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIMinesweeperGame_a88d914a6718cb2ad6df60a964c8d001e}{GetFlagsNumber}}()\ =\ 0;}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ \mbox{\hyperlink{classIMinesweeperGame_ab76f0273dab6ab85658fc345d1923d5d}{GetCell}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column)\ =\ 0;}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{static}\ IGamePtr\ \mbox{\hyperlink{classIMinesweeperGame_a7a8355c303118e39df4a1fec7f5988f3}{CreateGame}}();}
+\DoxyCodeLine{00086\ \};}
 
 \end{DoxyCode}

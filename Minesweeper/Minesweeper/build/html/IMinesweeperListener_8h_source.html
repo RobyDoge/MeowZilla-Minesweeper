@@ -104,20 +104,21 @@ $(function(){initNavTree('IMinesweeperListener_8h_source.html',''); initResizabl
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;MinesweeperCell.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;EGameState.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classIMinesweeperListener.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="classIMinesweeperListener.html">IMinesweeperListener</a></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnCellImageChange(<a class="code hl_class" href="classMinesweeperCell.html">MinesweeperCell</a>* cell, EGameState gameState, std::string theme) = 0;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnFlagCountChanged(<span class="keywordtype">int</span> flagsNumber) = 0;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnTimerChanged(<span class="keywordtype">int</span> timer) = 0;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnGameOver() = 0;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnWin() = 0;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnSettingsUpdated(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> minesNumber, std::string theme, <span class="keywordtype">int</span> timer) = 0;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIMinesweeperListener.html">~IMinesweeperListener</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classIMinesweeperListener.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classIMinesweeperListener.html">IMinesweeperListener</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnCellImageChange(<a class="code hl_class" href="classMinesweeperCell.html">MinesweeperCell</a>* cell, EGameState gameState, std::string theme) = 0;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnFlagCountChanged(<span class="keywordtype">int</span> flagsNumber) = 0;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnTimerChanged(<span class="keywordtype">int</span> timer) = 0;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnGameOver() = 0;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnWin() = 0;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnSettingsUpdated(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> minesNumber, std::string theme, <span class="keywordtype">int</span> timer) = 0;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIMinesweeperListener.html">~IMinesweeperListener</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
 </div>
-<div class="ttc" id="aclassIMinesweeperListener_html"><div class="ttname"><a href="classIMinesweeperListener.html">IMinesweeperListener</a></div><div class="ttdef"><b>Definition</b> IMinesweeperListener.h:6</div></div>
+<div class="ttc" id="aclassIMinesweeperListener_html"><div class="ttname"><a href="classIMinesweeperListener.html">IMinesweeperListener</a></div><div class="ttdef"><b>Definition</b> IMinesweeperListener.h:7</div></div>
 <div class="ttc" id="aclassMinesweeperCell_html"><div class="ttname"><a href="classMinesweeperCell.html">MinesweeperCell</a></div><div class="ttdef"><b>Definition</b> MinesweeperCell.h:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

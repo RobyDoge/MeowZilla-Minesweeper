@@ -12,13 +12,13 @@ Inheritance diagram for Minesweeper\+Game\+:\begin{figure}[H]
 bool \mbox{\hyperlink{classMinesweeperGame_a91363ac33df15f7e31dc07d040687c69}{Add\+Minesweeper\+Listener}} (\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeper\+Listener}} \texorpdfstring{$\ast$}{*}listener) override
 \begin{DoxyCompactList}\small\item\em Method to add a listener \doxylink{classIMinesweeperListener}{IMinesweeper\+Listener} pointer to the game. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classMinesweeperGame_a02ba6185b1f9d73fc0463bd6b4a821c6}{Remove\+Minesweeper\+Listener}} (\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeper\+Listener}} \texorpdfstring{$\ast$}{*}listener) override
-\item 
+\begin{DoxyCompactList}\small\item\em Method to remove a listener \doxylink{classIMinesweeperListener}{IMinesweeper\+Listener} pointer from the game. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMinesweeperGame_a9ea97c8621acce8012d774fd3ac2b173}{Generate\+Mines}} (int clicked\+Cell\+Row, int clicked\+Cell\+Column) override
-\item 
+\begin{DoxyCompactList}\small\item\em Method to generate mines based on the clicked Cell row and column. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMinesweeperGame_aa7b81f27fa16bcc51ca14cec1c4a8c83}{Restart\+Game}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Method to restart the game. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMinesweeperGame_a6776ded9cd8d3c6264fe29e649bfa2f9}{Reveal\+Cells}} (\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*}cell) override
-\item 
+\begin{DoxyCompactList}\small\item\em Method to set the cells to unrevealed. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMinesweeperGame_a752649000e1a5a60d5e764efbead9b2a}{Check\+Cell}} (\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*}cell) override
 \item 
 void \mbox{\hyperlink{classMinesweeperGame_a40da6eb3276462379d2ea959a41527b8}{Flag\+Cell}} (\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*}cell) override
@@ -40,31 +40,31 @@ void {\bfseries Set\+Theme} (const std\+::string \&theme)
 \Hypertarget{classMinesweeperGame_a82946e2830d2a06270b090c071f7cfe2}\label{classMinesweeperGame_a82946e2830d2a06270b090c071f7cfe2} 
 void {\bfseries Set\+Timer} (int timer)
 \item 
-\Hypertarget{classMinesweeperGame_a60145291b4e26c7e25b3a6d7d344a605}\label{classMinesweeperGame_a60145291b4e26c7e25b3a6d7d344a605} 
-std\+::string {\bfseries Get\+Theme} ()
-\item 
-\Hypertarget{classMinesweeperGame_a4449fe20a325c37a750729f4b9b1d78f}\label{classMinesweeperGame_a4449fe20a325c37a750729f4b9b1d78f} 
-int {\bfseries Get\+Timer} ()
-\item 
-\Hypertarget{classMinesweeperGame_a7df6fd395a76f2a39495c708c5a1c4b7}\label{classMinesweeperGame_a7df6fd395a76f2a39495c708c5a1c4b7} 
-int {\bfseries Get\+Width} ()
-\item 
-\Hypertarget{classMinesweeperGame_aeb0c940a640053844802ca44182db46c}\label{classMinesweeperGame_aeb0c940a640053844802ca44182db46c} 
-int {\bfseries Get\+Height} ()
-\item 
+std\+::string \mbox{\hyperlink{classMinesweeperGame_a3a3a3d1fb4f996fee20a3c6be5a74ee6}{Get\+Theme}} () const
+\begin{DoxyCompactList}\small\item\em Getter method that returns the game\textquotesingle{}s current theme. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMinesweeperGame_a2789ac6adb45f9a7635c48e74023f844}{Get\+Timer}} () override
+\begin{DoxyCompactList}\small\item\em Getter method that returns the game\textquotesingle{}s timer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMinesweeperGame_a881472e5ca3bb5c459f3a0d4457b3c90}{Get\+Width}} () override
+\begin{DoxyCompactList}\small\item\em Getter method that returns the game\textquotesingle{}s width. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMinesweeperGame_a75b3df3a543babe3cf652c33fd499612}{Get\+Height}} () override
+\begin{DoxyCompactList}\small\item\em Getter method that returns the game\textquotesingle{}s height. \end{DoxyCompactList}\item 
 \Hypertarget{classMinesweeperGame_ae40d238302836947c3e6308fd790184d}\label{classMinesweeperGame_ae40d238302836947c3e6308fd790184d} 
 std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} $>$ $>$ {\bfseries Get\+Cells} ()
 \item 
-\Hypertarget{classMinesweeperGame_a7db81cbbb5a0aaf139305c555cdbf028}\label{classMinesweeperGame_a7db81cbbb5a0aaf139305c555cdbf028} 
-\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Cell} (int row, int column)
-\item 
+\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMinesweeperGame_a336b9095c9d52ce58163069f3e1c983a}{Get\+Cell}} (int row, int column) override
+\begin{DoxyCompactList}\small\item\em Getter method that returns the Cell at the specified row and column. \end{DoxyCompactList}\item 
 \Hypertarget{classMinesweeperGame_adaf7704f92742f2d2a578770b972b2fe}\label{classMinesweeperGame_adaf7704f92742f2d2a578770b972b2fe} 
 EGame\+State {\bfseries Get\+Game\+State} ()
 \item 
-\Hypertarget{classMinesweeperGame_a8c83838b707669f4bab8e3276e803d61}\label{classMinesweeperGame_a8c83838b707669f4bab8e3276e803d61} 
-int {\bfseries Get\+Flags\+Number} ()
-\end{DoxyCompactItemize}
+int \mbox{\hyperlink{classMinesweeperGame_a27a1390ee00ad7ca95d799151b48afbd}{Get\+Flags\+Number}} () override
+\begin{DoxyCompactList}\small\item\em Getter method that returns the number of flags within the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}}
+\begin{DoxyCompactItemize}
+\item 
+static IGame\+Ptr {\bfseries Create\+Game} ()
+\begin{DoxyCompactList}\small\item\em Method to create a game instance, used so that the UI only interacts with the game through the interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
@@ -88,9 +88,9 @@ Implements \mbox{\hyperlink{classIMinesweeperGame_a280a32b35ab85a0ee69f0f01a7ce5
 {\footnotesize\ttfamily \label{classMinesweeperGame_a752649000e1a5a60d5e764efbead9b2a} 
 void Minesweeper\+Game\+::\+Check\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*}}]{cell}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+This method handles the behavior when a cell in the game is clicked. It checks the state of the game and the cell and performs appropriate actions such as revealing cells, generating mines, or ending the game. 
 
-
-Implements \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}.
+Implements \mbox{\hyperlink{classIMinesweeperGame_a2cbf24fa98286e7dfef8c6e31f7ff153}{IMinesweeper\+Game}}.
 
 \Hypertarget{classMinesweeperGame_a40da6eb3276462379d2ea959a41527b8}\index{MinesweeperGame@{MinesweeperGame}!FlagCell@{FlagCell}}
 \index{FlagCell@{FlagCell}!MinesweeperGame@{MinesweeperGame}}
@@ -98,9 +98,9 @@ Implements \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}.
 {\footnotesize\ttfamily \label{classMinesweeperGame_a40da6eb3276462379d2ea959a41527b8} 
 void Minesweeper\+Game\+::\+Flag\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*}}]{cell}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Method to calculate the number of mines adjacent to the given cell. It iterates over all neighboring cells, checks their states, and increments the count of adjacent mines in the given cell if a mine is found. 
 
-
-Implements \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}.
+Implements \mbox{\hyperlink{classIMinesweeperGame_aefadeb564031b70b845304ea8b2e929a}{IMinesweeper\+Game}}.
 
 \Hypertarget{classMinesweeperGame_a9ea97c8621acce8012d774fd3ac2b173}\index{MinesweeperGame@{MinesweeperGame}!GenerateMines@{GenerateMines}}
 \index{GenerateMines@{GenerateMines}!MinesweeperGame@{MinesweeperGame}}
@@ -110,7 +110,95 @@ void Minesweeper\+Game\+::\+Generate\+Mines (\begin{DoxyParamCaption}\item[{int}
 
 
 
-Implements \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}.
+Method to generate mines based on the clicked Cell row and column. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_ad9eadb543d467c0e26ad3049d42a6ac0}{IMinesweeper\+Game}}.
+
+\Hypertarget{classMinesweeperGame_a336b9095c9d52ce58163069f3e1c983a}\index{MinesweeperGame@{MinesweeperGame}!GetCell@{GetCell}}
+\index{GetCell@{GetCell}!MinesweeperGame@{MinesweeperGame}}
+\doxysubsubsection{\texorpdfstring{GetCell()}{GetCell()}}
+{\footnotesize\ttfamily \label{classMinesweeperGame_a336b9095c9d52ce58163069f3e1c983a} 
+\mbox{\hyperlink{classMinesweeperCell}{Minesweeper\+Cell}} \texorpdfstring{$\ast$}{*} Minesweeper\+Game\+::\+Get\+Cell (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Getter method that returns the Cell at the specified row and column. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_ab76f0273dab6ab85658fc345d1923d5d}{IMinesweeper\+Game}}.
+
+\Hypertarget{classMinesweeperGame_a27a1390ee00ad7ca95d799151b48afbd}\index{MinesweeperGame@{MinesweeperGame}!GetFlagsNumber@{GetFlagsNumber}}
+\index{GetFlagsNumber@{GetFlagsNumber}!MinesweeperGame@{MinesweeperGame}}
+\doxysubsubsection{\texorpdfstring{GetFlagsNumber()}{GetFlagsNumber()}}
+{\footnotesize\ttfamily \label{classMinesweeperGame_a27a1390ee00ad7ca95d799151b48afbd} 
+int Minesweeper\+Game\+::\+Get\+Flags\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Getter method that returns the number of flags within the game. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_a88d914a6718cb2ad6df60a964c8d001e}{IMinesweeper\+Game}}.
+
+\Hypertarget{classMinesweeperGame_a75b3df3a543babe3cf652c33fd499612}\index{MinesweeperGame@{MinesweeperGame}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!MinesweeperGame@{MinesweeperGame}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily \label{classMinesweeperGame_a75b3df3a543babe3cf652c33fd499612} 
+int Minesweeper\+Game\+::\+Get\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Getter method that returns the game\textquotesingle{}s height. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_abd8e9fe7e1abf395260288f170a98715}{IMinesweeper\+Game}}.
+
+\Hypertarget{classMinesweeperGame_a3a3a3d1fb4f996fee20a3c6be5a74ee6}\index{MinesweeperGame@{MinesweeperGame}!GetTheme@{GetTheme}}
+\index{GetTheme@{GetTheme}!MinesweeperGame@{MinesweeperGame}}
+\doxysubsubsection{\texorpdfstring{GetTheme()}{GetTheme()}}
+{\footnotesize\ttfamily \label{classMinesweeperGame_a3a3a3d1fb4f996fee20a3c6be5a74ee6} 
+std\+::string Minesweeper\+Game\+::\+Get\+Theme (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Getter method that returns the game\textquotesingle{}s current theme. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_acf098f756199b57a50b453f667c5ad09}{IMinesweeper\+Game}}.
+
+\Hypertarget{classMinesweeperGame_a2789ac6adb45f9a7635c48e74023f844}\index{MinesweeperGame@{MinesweeperGame}!GetTimer@{GetTimer}}
+\index{GetTimer@{GetTimer}!MinesweeperGame@{MinesweeperGame}}
+\doxysubsubsection{\texorpdfstring{GetTimer()}{GetTimer()}}
+{\footnotesize\ttfamily \label{classMinesweeperGame_a2789ac6adb45f9a7635c48e74023f844} 
+int Minesweeper\+Game\+::\+Get\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Getter method that returns the game\textquotesingle{}s timer. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_a0b050ab395689aea1e41d49ccda6ad9e}{IMinesweeper\+Game}}.
+
+\Hypertarget{classMinesweeperGame_a881472e5ca3bb5c459f3a0d4457b3c90}\index{MinesweeperGame@{MinesweeperGame}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!MinesweeperGame@{MinesweeperGame}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily \label{classMinesweeperGame_a881472e5ca3bb5c459f3a0d4457b3c90} 
+int Minesweeper\+Game\+::\+Get\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Getter method that returns the game\textquotesingle{}s width. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_a5498b89f2f702adfadccdf0abd101ec6}{IMinesweeper\+Game}}.
 
 \Hypertarget{classMinesweeperGame_a02ba6185b1f9d73fc0463bd6b4a821c6}\index{MinesweeperGame@{MinesweeperGame}!RemoveMinesweeperListener@{RemoveMinesweeperListener}}
 \index{RemoveMinesweeperListener@{RemoveMinesweeperListener}!MinesweeperGame@{MinesweeperGame}}
@@ -120,7 +208,11 @@ bool Minesweeper\+Game\+::\+Remove\+Minesweeper\+Listener (\begin{DoxyParamCapti
 
 
 
-Implements \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}.
+Method to remove a listener \doxylink{classIMinesweeperListener}{IMinesweeper\+Listener} pointer from the game. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_ae2324130b040af5a5642bce7e66cea8d}{IMinesweeper\+Game}}.
 
 \Hypertarget{classMinesweeperGame_aa7b81f27fa16bcc51ca14cec1c4a8c83}\index{MinesweeperGame@{MinesweeperGame}!RestartGame@{RestartGame}}
 \index{RestartGame@{RestartGame}!MinesweeperGame@{MinesweeperGame}}
@@ -130,7 +222,11 @@ void Minesweeper\+Game\+::\+Restart\+Game (\begin{DoxyParamCaption}{}{}\end{Doxy
 
 
 
-Implements \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}.
+Method to restart the game. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_a8d7c1ab751bb5bf35fdcdf60fe00c0c8}{IMinesweeper\+Game}}.
 
 \Hypertarget{classMinesweeperGame_a6776ded9cd8d3c6264fe29e649bfa2f9}\index{MinesweeperGame@{MinesweeperGame}!RevealCells@{RevealCells}}
 \index{RevealCells@{RevealCells}!MinesweeperGame@{MinesweeperGame}}
@@ -140,7 +236,11 @@ void Minesweeper\+Game\+::\+Reveal\+Cells (\begin{DoxyParamCaption}\item[{\mbox{
 
 
 
-Implements \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}.
+Method to set the cells to unrevealed. 
+
+
+
+Implements \mbox{\hyperlink{classIMinesweeperGame_a68cebf2d3fd0b5c488e9962ad18975ad}{IMinesweeper\+Game}}.
 
 \Hypertarget{classMinesweeperGame_aa5758009416054c7b4af938679792eb2}\index{MinesweeperGame@{MinesweeperGame}!SetSettings@{SetSettings}}
 \index{SetSettings@{SetSettings}!MinesweeperGame@{MinesweeperGame}}
@@ -148,9 +248,15 @@ Implements \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}.
 {\footnotesize\ttfamily \label{classMinesweeperGame_aa5758009416054c7b4af938679792eb2} 
 void Minesweeper\+Game\+::\+Set\+Settings (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{int}]{mines\+Number}{, }\item[{std\+::string}]{theme}{, }\item[{int}]{timer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Method to set the settings of the game\+:
+\begin{DoxyItemize}
+\item Sets the game window\textquotesingle{}s width and height
+\item Sets the game\textquotesingle{}s number of mines
+\item Sets the game\textquotesingle{}s theme
+\item Loops through the listeners and calls the On\+Settings\+Updated method 
+\end{DoxyItemize}
 
-
-Implements \mbox{\hyperlink{classIMinesweeperGame}{IMinesweeper\+Game}}.
+Implements \mbox{\hyperlink{classIMinesweeperGame_a5b428c7c4e29bcb2a78fedb56aef1625}{IMinesweeper\+Game}}.
 
 
 

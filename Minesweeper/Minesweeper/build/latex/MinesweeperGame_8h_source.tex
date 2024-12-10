@@ -19,50 +19,52 @@
 \DoxyCodeLine{00015\ }
 \DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classMinesweeperGame}{MinesweeperGame}}();}
 \DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMinesweeperGame_a91363ac33df15f7e31dc07d040687c69}{AddMinesweeperListener}}(\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeperListener}}*\ listener)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ RemoveMinesweeperListener(\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeperListener}}*\ listener)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ GenerateMines(\textcolor{keywordtype}{int}\ clickedCellRow,\ \textcolor{keywordtype}{int}\ clickedCellColumn)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ RestartGame()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ RevealCells(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ CheckCell(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ FlagCell(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ SetSettings(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{int}\ minesNumber,\ std::string\ theme,\ \textcolor{keywordtype}{int}\ timer)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ Adaugã aceste\ metode\ în MinesweeperGame.h}}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ SetWidth(\textcolor{keywordtype}{int}\ width);}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ SetHeight(\textcolor{keywordtype}{int}\ height);}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ SetMinesNumber(\textcolor{keywordtype}{int}\ minesNumber);}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ SetTheme(\textcolor{keyword}{const}\ std::string\&\ theme);}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ SetTimer(\textcolor{keywordtype}{int}\ timer);}
-\DoxyCodeLine{00033\ \ \ \ \ std::string\ GetTheme();}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ GetTimer();}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ GetWidth();}
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ GetHeight();}
-\DoxyCodeLine{00037\ \ \ \ \ std::vector<std::vector<MinesweeperCell>>\ GetCells();}
-\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ GetCell(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column);}
-\DoxyCodeLine{00039\ \ \ \ \ EGameState\ GetGameState();}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ GetFlagsNumber();}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ CheckAdjacentMines(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUnrevealedCells();}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ isOutOfBounds(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column);}
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ GameOver()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ CheckVictory()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ EndGame()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ CountdownTimer()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \ \ \ \ std::vector<IMinesweeperListener*>\ m\_listeners;}
-\DoxyCodeLine{00052\ \ \ \ \ std::vector<std::vector<MinesweeperCell>>\ m\_cells;}
-\DoxyCodeLine{00053\ \ \ \ \ EGameState\ m\_gameState;}
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_width;}
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_height;}
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_minesNumber;}
-\DoxyCodeLine{00057\ \ \ \ \ std::string\ m\_theme;}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_timer;}
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_flagsNumber;}
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_revealedCells;}
-\DoxyCodeLine{00061\ \};}
-\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMinesweeperGame_a91363ac33df15f7e31dc07d040687c69}{AddMinesweeperListener}}(\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeperListener}}*\ listener)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMinesweeperGame_a02ba6185b1f9d73fc0463bd6b4a821c6}{RemoveMinesweeperListener}}(\mbox{\hyperlink{classIMinesweeperListener}{IMinesweeperListener}}*\ listener)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMinesweeperGame_a9ea97c8621acce8012d774fd3ac2b173}{GenerateMines}}(\textcolor{keywordtype}{int}\ clickedCellRow,\ \textcolor{keywordtype}{int}\ clickedCellColumn)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMinesweeperGame_aa7b81f27fa16bcc51ca14cec1c4a8c83}{RestartGame}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMinesweeperGame_a6776ded9cd8d3c6264fe29e649bfa2f9}{RevealCells}}(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMinesweeperGame_a752649000e1a5a60d5e764efbead9b2a}{CheckCell}}(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMinesweeperGame_a40da6eb3276462379d2ea959a41527b8}{FlagCell}}(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMinesweeperGame_aa5758009416054c7b4af938679792eb2}{SetSettings}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{int}\ minesNumber,\ std::string\ theme,\ \textcolor{keywordtype}{int}\ timer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ SetWidth(\textcolor{keywordtype}{int}\ width);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ SetHeight(\textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ SetMinesNumber(\textcolor{keywordtype}{int}\ minesNumber);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ SetTheme(\textcolor{keyword}{const}\ std::string\&\ theme);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ SetTimer(\textcolor{keywordtype}{int}\ timer);}
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ \mbox{\hyperlink{classMinesweeperGame_a3a3a3d1fb4f996fee20a3c6be5a74ee6}{GetTheme}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMinesweeperGame_a2789ac6adb45f9a7635c48e74023f844}{GetTimer}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMinesweeperGame_a881472e5ca3bb5c459f3a0d4457b3c90}{GetWidth}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMinesweeperGame_a75b3df3a543babe3cf652c33fd499612}{GetHeight}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<std::vector<MinesweeperCell>>\ GetCells();}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ \mbox{\hyperlink{classMinesweeperGame_a336b9095c9d52ce58163069f3e1c983a}{GetCell}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ \ \ \ \ EGameState\ GetGameState();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMinesweeperGame_a27a1390ee00ad7ca95d799151b48afbd}{GetFlagsNumber}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ CheckAdjacentMines(\mbox{\hyperlink{classMinesweeperCell}{MinesweeperCell}}*\ cell)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUnrevealedCells();}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsOutOfBounds(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ GameOver()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ CheckVictory()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ EndGame()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ CountdownTimer()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ std::vector<IMinesweeperListener*>\ m\_listeners;}
+\DoxyCodeLine{00054\ \ \ \ \ std::vector<std::vector<MinesweeperCell>>\ m\_cells;}
+\DoxyCodeLine{00055\ \ \ \ \ EGameState\ m\_gameState;}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_width;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_height;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_minesNumber;}
+\DoxyCodeLine{00059\ \ \ \ \ std::string\ m\_theme;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_timer;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_flagsNumber;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_revealedCells;}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
 
 \end{DoxyCode}
