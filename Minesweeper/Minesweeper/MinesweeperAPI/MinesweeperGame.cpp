@@ -336,3 +336,7 @@ int MinesweeperGame::GetTimer()
 	return m_timer;
 }
 
+IGamePtr IMinesweeperGame::CreateGame()
+{
+	return std::make_shared<MinesweeperGame>();
+}

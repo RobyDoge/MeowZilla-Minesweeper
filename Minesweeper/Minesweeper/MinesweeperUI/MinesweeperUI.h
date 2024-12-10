@@ -2,13 +2,14 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MinesweeperUI.h"
-#include "MinesweeperGame.h"
+#include "IMinesweeperGame.h"
 #include "MinesweeperConfigDialog.h"
 #include "MinesweeperInfoDisplay.h"
 #include "BoardUI.h"
 #include <qlabel.h>
 #include <qpixmap.h>
 #include <QMessageBox>
+#include "IMinesweeperGame.h"
 
 class MinesweeperUI : public QMainWindow
 {
@@ -18,7 +19,7 @@ public:
     MinesweeperUI(QWidget *parent = nullptr);
     ~MinesweeperUI();
 
-    MinesweeperGame* GetMinesweeperGame();
+    IGamePtr GetMinesweeperGame();
     BoardUI* GetBoard();
     MinesweeperInfoDisplay* GetInfoDisplay();
 
@@ -30,7 +31,7 @@ private:
 
 
     Ui::MinesweeperUIClass ui;
-    MinesweeperGame m_minesweeperGame;
+    IGamePtr m_minesweeperGame;
     QPushButton* m_restartButton;
 
     BoardUI* m_board;

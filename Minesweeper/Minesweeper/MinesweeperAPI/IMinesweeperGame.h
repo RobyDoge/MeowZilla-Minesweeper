@@ -2,6 +2,9 @@
 
 #include "IMinesweeperListener.h"
 #include "MinesweeperCell.h"
+#include<memory>
+
+using IGamePtr = std::shared_ptr<class IMinesweeperGame>;
 
 //! Interface class for the Minesweeper game
 class IMinesweeperGame
@@ -23,4 +26,16 @@ public:
 	virtual void CheckAdjacentMines(MinesweeperCell* cell) = 0;
 	virtual void FlagCell(MinesweeperCell* cell) = 0;
 	virtual void SetSettings(int width, int height, int minesNumber, std::string theme, int timer) = 0;
+
+public:
+
+	virtual std::string GetTheme() const = 0;
+	virtual int GetTimer() = 0;
+	virtual int GetWidth() = 0;
+	virtual int GetHeight() = 0;
+	virtual int GetFlagsNumber() = 0;
+	virtual MinesweeperCell* GetCell(int row, int column) = 0;
+
+public:
+	static IGamePtr CreateGame();
 };

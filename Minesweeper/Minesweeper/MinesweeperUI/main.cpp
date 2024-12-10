@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     MinesweeperUI w;
     w.show();
     MinesweeperListenerUI listener;
-    MinesweeperGame* minesweeperGame = w.GetMinesweeperGame();
+    IGamePtr minesweeperGame = w.GetMinesweeperGame();
     BoardUI* board = w.GetBoard();
     MinesweeperInfoDisplay* infoDisplay = w.GetInfoDisplay();
     w.connect(&listener, &MinesweeperListenerUI::CellImageChanged, board, &BoardUI::ChangeCellImage);

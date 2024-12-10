@@ -33,13 +33,13 @@ public:
 	void SetTheme(const std::string& theme);
 	void SetTimer(int timer);
 	std::string GetTheme() const;
-	int GetTimer();
-	int GetWidth();
-	int GetHeight();
+	int GetTimer() override;
+	int GetWidth() override;
+	int GetHeight() override;
 	std::vector<std::vector<MinesweeperCell>> GetCells();
-	MinesweeperCell* GetCell(int row, int column);
+	MinesweeperCell* GetCell(int row, int column) override;
 	EGameState GetGameState();
-	int GetFlagsNumber();
+	int GetFlagsNumber() override;
 
 private:
 	void CheckAdjacentMines(MinesweeperCell* cell) override;

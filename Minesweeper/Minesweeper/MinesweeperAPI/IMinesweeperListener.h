@@ -2,6 +2,7 @@
 #include "MinesweeperCell.h"
 #include "EGameState.h"
 #include <string>
+
 class IMinesweeperListener
 {
 public:
