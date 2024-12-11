@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Strategies">
+      <UniqueIdentifier>{5807d308-7dcc-4c28-9d4b-f114a7e535a5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IMinesweeperGame.h">
@@ -39,6 +42,24 @@
     <ClInclude Include="ICell.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EDifficulty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyStrategy.h">
+      <Filter>Strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="MediumStrategy.h">
+      <Filter>Strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="HardStrategy.h">
+      <Filter>Strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomStrategy.h">
+      <Filter>Strategies</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MinesweeperGame.cpp">
@@ -46,6 +67,18 @@
     </ClCompile>
     <ClCompile Include="MinesweeperCell.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyStrategy.cpp">
+      <Filter>Strategies</Filter>
+    </ClCompile>
+    <ClCompile Include="MediumStrategy.cpp">
+      <Filter>Strategies</Filter>
+    </ClCompile>
+    <ClCompile Include="HardStrategy.cpp">
+      <Filter>Strategies</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomStrategy.cpp">
+      <Filter>Strategies</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

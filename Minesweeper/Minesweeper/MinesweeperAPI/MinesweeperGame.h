@@ -25,6 +25,7 @@ public:
 	void CheckCell(CellPtr cell) override;
 	void FlagCell(CellPtr cell) override;
 	void SetSettings(int width, int height, int minesNumber, std::string theme, int timer) override;
+	void SetStrategy(IStrategyPtr strategy) override;
 
 public:
 	void SetWidth(int width);

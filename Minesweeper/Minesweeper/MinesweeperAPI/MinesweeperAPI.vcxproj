@@ -19,16 +19,26 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CustomStrategy.h" />
+    <ClInclude Include="EasyStrategy.h" />
     <ClInclude Include="ECellState.h" />
+    <ClInclude Include="EDifficulty.h" />
     <ClInclude Include="EGameState.h" />
+    <ClInclude Include="HardStrategy.h" />
     <ClInclude Include="ICell.h" />
     <ClInclude Include="IMinesweeperGame.h" />
     <ClInclude Include="IMinesweeperListener.h" />
+    <ClInclude Include="IStrategy.h" />
+    <ClInclude Include="MediumStrategy.h" />
     <ClInclude Include="MinesweeperGame.h" />
     <ClInclude Include="MinesweeperCell.h" />
     <ClInclude Include="Themes.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CustomStrategy.cpp" />
+    <ClCompile Include="EasyStrategy.cpp" />
+    <ClCompile Include="HardStrategy.cpp" />
+    <ClCompile Include="MediumStrategy.cpp" />
     <ClCompile Include="MinesweeperGame.cpp" />
     <ClCompile Include="MinesweeperCell.cpp" />
   </ItemGroup>

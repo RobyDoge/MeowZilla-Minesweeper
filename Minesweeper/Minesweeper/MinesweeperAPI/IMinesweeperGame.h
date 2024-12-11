@@ -2,6 +2,7 @@
 
 #include "IMinesweeperListener.h"
 #include "ICell.h"
+#include "IStrategy.h"
 #include<memory>
 
 using IGamePtr = std::shared_ptr<class IMinesweeperGame>;
@@ -65,6 +66,13 @@ public:
 		- Loops through the listeners and calls the OnSettingsUpdated method
 	*/
 	virtual void SetSettings(int width, int height, int minesNumber, std::string theme, int timer) = 0;
+	/*!
+		Method to set the strategy of the game:
+		- Sets the game's strategy to the given strategy
+		- Calls the SetSettings method of the strategy
+		- Loops through the listeners and calls the OnSettingsUpdated method
+	*/
+	virtual void SetStrategy(IStrategyPtr strategy) = 0;
 
 public:
 	//! Getter method that returns the game's current theme

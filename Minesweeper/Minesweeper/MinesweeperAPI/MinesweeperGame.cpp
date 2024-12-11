@@ -250,6 +250,20 @@ void MinesweeperGame::SetSettings(int width, int height, int minesNumber, std::s
 	}
 }
 
+void MinesweeperGame::SetStrategy(IStrategyPtr strategy)
+{
+	SetWidth(strategy->SetWidth());
+	SetHeight(strategy->SetHeight());
+	SetMinesNumber(strategy->SetMinesNumber());
+	SetTimer(strategy->SetTimer());
+	SetTheme(strategy->SetTheme());
+	for (auto listener : m_listeners)
+	{
+		listener->OnSettingsUpdated(m_width, m_height, m_minesNumber, m_theme, m_timer);
+	}
+
+}
+
 void MinesweeperGame::SetUnrevealedCells()
 {
 	m_cells.clear();
