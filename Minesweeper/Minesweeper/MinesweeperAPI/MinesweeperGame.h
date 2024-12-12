@@ -26,6 +26,7 @@ public:
 	void FlagCell(CellPtr cell) override;
 	void SetSettings(int width, int height, int minesNumber, std::string theme, int timer) override;
 	void SetStrategy(IStrategyPtr strategy) override;
+	void SetStrategy(EDifficulty difficulty) override;
 
 public:
 	void SetWidth(int width);
@@ -50,6 +51,8 @@ private:
 	void CheckVictory() override;
 	void EndGame() override;
 	void CountdownTimer() override;
+	void SetSettings(); //this is called for when a strategy is selected
+
 
 	std::vector<IMinesweeperListener*> m_listeners;
 	std::vector<std::vector<CellPtr>> m_cells;
@@ -61,5 +64,7 @@ private:
 	int m_timer;
 	int m_flagsNumber;
 	int m_revealedCells;
+
+	IStrategyPtr m_strategy;
 };
 

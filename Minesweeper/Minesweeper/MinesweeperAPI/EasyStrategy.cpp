@@ -1,27 +1,27 @@
 #include "EasyStrategy.h"
 
 
-int EasyStrategy::SetHeight()
+int EasyStrategy::GetHeight()
 {
 	return m_width;
 }
 
-int EasyStrategy::SetWidth()
+int EasyStrategy::GetWidth()
 {
 	return m_height;
 }
 
-int EasyStrategy::SetMinesNumber()
+int EasyStrategy::GetMinesNumber()
 {
 	return m_minesNumber;
 }
 
-int EasyStrategy::SetTimer()
+int EasyStrategy::GetTimer()
 {
 	return m_timer;
 }
 
-std::string EasyStrategy::SetTheme()
+std::string EasyStrategy::GetTheme()
 {
 	return m_theme;
 }

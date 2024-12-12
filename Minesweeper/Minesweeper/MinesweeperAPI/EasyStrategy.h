@@ -4,11 +4,11 @@
 class EasyStrategy :public IStrategy
 {
 public:
-	int SetHeight() override;
-	int SetWidth() override;
-	int SetMinesNumber() override;
-	int SetTimer() override;
-	std::string SetTheme() override;
+	int GetHeight() override;
+	int GetWidth() override;
+	int GetMinesNumber() override;
+	int GetTimer() override;
+	std::string GetTheme() override;
 
 
 private:

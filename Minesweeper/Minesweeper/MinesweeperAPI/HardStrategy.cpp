@@ -1,26 +1,26 @@
 #include "HardStrategy.h"
 
-int HardStrategy::SetHeight()
+int HardStrategy::GetHeight()
 {
 	return m_width;
 }
 
-int HardStrategy::SetWidth()
+int HardStrategy::GetWidth()
 {
 	return m_height;
 }
 
-int HardStrategy::SetMinesNumber()
+int HardStrategy::GetMinesNumber()
 {
 	return m_minesNumber;
 }
 
-int HardStrategy::SetTimer()
+int HardStrategy::GetTimer()
 {
 	return m_timer;
 }
 
-std::string HardStrategy::SetTheme()
+std::string HardStrategy::GetTheme()
 {
 	return m_theme;
 }

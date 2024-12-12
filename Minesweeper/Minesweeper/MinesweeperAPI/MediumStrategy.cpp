@@ -1,26 +1,26 @@
 #include "MediumStrategy.h"
 
-int MediumStrategy::SetHeight()
+int MediumStrategy::GetHeight()
 {
     return m_height;
 }
 
-int MediumStrategy::SetWidth()
+int MediumStrategy::GetWidth()
 {
     return m_width;
 }
 
-int MediumStrategy::SetMinesNumber()
+int MediumStrategy::GetMinesNumber()
 {
     return m_minesNumber;
 }
 
-int MediumStrategy::SetTimer()
+int MediumStrategy::GetTimer()
 {
     return m_timer;
 }
 
-std::string MediumStrategy::SetTheme()
+std::string MediumStrategy::GetTheme()
 {
     return m_theme;
 }

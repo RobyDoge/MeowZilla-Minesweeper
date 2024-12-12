@@ -3,6 +3,7 @@
 #include "IMinesweeperListener.h"
 #include "ICell.h"
 #include "IStrategy.h"
+#include "EDifficulty.h"
 #include<memory>
 
 using IGamePtr = std::shared_ptr<class IMinesweeperGame>;
@@ -73,6 +74,7 @@ public:
 		- Loops through the listeners and calls the OnSettingsUpdated method
 	*/
 	virtual void SetStrategy(IStrategyPtr strategy) = 0;
+	virtual void SetStrategy(EDifficulty difficulty) = 0;
 
 public:
 	//! Getter method that returns the game's current theme

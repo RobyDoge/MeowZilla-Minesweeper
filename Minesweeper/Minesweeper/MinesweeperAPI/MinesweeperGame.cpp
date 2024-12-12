@@ -1,4 +1,8 @@
 ﻿#include "MinesweeperGame.h"
+
+#include "EasyStrategy.h"
+#include "HardStrategy.h"
+#include "MediumStrategy.h"
 #include "Themes.h"
 
 MinesweeperGame::MinesweeperGame()
@@ -250,18 +254,46 @@ void MinesweeperGame::SetSettings(int width, int height, int minesNumber, std::s
 	}
 }
 
-void MinesweeperGame::SetStrategy(IStrategyPtr strategy)
+void MinesweeperGame::SetSettings()
 {
-	SetWidth(strategy->SetWidth());
-	SetHeight(strategy->SetHeight());
-	SetMinesNumber(strategy->SetMinesNumber());
-	SetTimer(strategy->SetTimer());
-	SetTheme(strategy->SetTheme());
+	SetWidth(m_strategy->GetWidth());
+	SetHeight(m_strategy->GetHeight());
+	SetMinesNumber(m_strategy->GetMinesNumber());
+	SetTheme(m_strategy->GetTheme());
+	SetTimer(m_strategy->GetTimer());
 	for (auto listener : m_listeners)
 	{
 		listener->OnSettingsUpdated(m_width, m_height, m_minesNumber, m_theme, m_timer);
 	}
+}
 
+void MinesweeperGame::SetStrategy(IStrategyPtr strategy)
+{
+	m_strategy = strategy;
+	SetSettings();
+}
+
+void MinesweeperGame::SetStrategy(const EDifficulty difficulty)
+{
+	switch (difficulty)
+	{
+	case EDifficulty::EASY:
+		m_strategy = std::make_shared<EasyStrategy>();
+		SetSettings();
+		break;
+	case EDifficulty::MEDIUM:
+		m_strategy = std::make_shared<MediumStrategy>();
+		SetSettings();
+		break;
+	case EDifficulty::HARD:
+		m_strategy = std::make_shared<HardStrategy>();
+		SetSettings();
+		break;
+	case EDifficulty::CUSTOM:
+		break;
+	default: 
+		break;
+	}
 }
 
 void MinesweeperGame::SetUnrevealedCells()
