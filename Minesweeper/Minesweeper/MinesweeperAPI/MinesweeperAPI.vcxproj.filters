@@ -57,9 +57,6 @@
     <ClInclude Include="HardStrategy.h">
       <Filter>Strategies</Filter>
     </ClInclude>
-    <ClInclude Include="CustomStrategy.h">
-      <Filter>Strategies</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MinesweeperGame.cpp">
@@ -75,9 +72,6 @@
       <Filter>Strategies</Filter>
     </ClCompile>
     <ClCompile Include="HardStrategy.cpp">
-      <Filter>Strategies</Filter>
-    </ClCompile>
-    <ClCompile Include="CustomStrategy.cpp">
       <Filter>Strategies</Filter>
     </ClCompile>
   </ItemGroup>

@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CustomStrategy.h" />
     <ClInclude Include="EasyStrategy.h" />
     <ClInclude Include="ECellState.h" />
     <ClInclude Include="EDifficulty.h" />
@@ -35,7 +34,6 @@
     <ClInclude Include="Themes.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CustomStrategy.cpp" />
     <ClCompile Include="EasyStrategy.cpp" />
     <ClCompile Include="HardStrategy.cpp" />
     <ClCompile Include="MediumStrategy.cpp" />

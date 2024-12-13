@@ -112,10 +112,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="StrategyUI.cpp" />
     <QtRcc Include="MinesweeperUI.qrc" />
     <QtUic Include="MinesweeperUI.ui" />
     <QtMoc Include="MinesweeperUI.h" />
-    <ClCompile Include="..\MinesweeperAPI\CustomStrategy.cpp" />
     <ClCompile Include="BoardUI.cpp" />
     <ClCompile Include="MinesweeperConfigDialog.cpp" />
     <ClCompile Include="MinesweeperInfoDisplay.cpp" />
@@ -124,8 +124,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\MinesweeperAPI\CustomStrategy.h" />
     <ClInclude Include="BoardUI.h" />
+    <ClInclude Include="StrategyUI.h" />
     <QtMoc Include="MinesweeperConfigDialog.h" />
     <ClInclude Include="MinesweeperInfoDisplay.h" />
     <QtMoc Include="MinesweeperListenerUI.h" />

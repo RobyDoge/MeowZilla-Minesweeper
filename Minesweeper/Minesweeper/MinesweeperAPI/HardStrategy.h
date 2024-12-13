@@ -11,8 +11,8 @@ public:
 	std::string GetTheme() override;
 
 private:
-	int m_width = 30;
-	int m_height = 16;
+	int m_width = 25;
+	int m_height = 25;
 	int m_minesNumber = 99;
 	int m_timer = 100;
 	std::string m_theme = "Starry Sky";

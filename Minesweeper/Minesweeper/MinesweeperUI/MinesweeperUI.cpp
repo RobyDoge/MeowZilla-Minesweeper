@@ -2,7 +2,7 @@
 #include <memory>
 #include <QPushButton>
 #include <QMouseEvent>
-
+#include "CustomStrategy.h"
 MinesweeperUI::MinesweeperUI(QWidget* parent)
 	: QMainWindow(parent)
 {
@@ -38,12 +38,41 @@ void MinesweeperUI::CreateMenuBar()
 
 	QMenu* gameMenu = menuBar->addMenu("Game");
 
-	QAction* configureAction = gameMenu->addAction("Configure...");
+	QAction* configureAction = gameMenu->addAction("Custom Dificulty");
 	connect(configureAction, &QAction::triggered, this, &MinesweeperUI::OpenConfigDialog);
+	
+	QAction* easyAction = gameMenu->addAction("Easy Dificulty");
+	connect(easyAction, &QAction::triggered, this, &MinesweeperUI::SetEasyGame);
+
+	QAction* mediumAction = gameMenu->addAction("Medium Dificulty");
+	connect(mediumAction, &QAction::triggered, this, &MinesweeperUI::SetMediumGame);
+
+	QAction* hardAction = gameMenu->addAction("Hard Dificulty");
+	connect(hardAction, &QAction::triggered, this, &MinesweeperUI::SetHardGame);
 
 	setMenuBar(menuBar);
 }
 
+void MinesweeperUI::SetEasyGame()
+{
+	m_minesweeperGame->SetStrategy(EDifficulty::EASY);
+	m_minesweeperGame->RestartGame();
+
+}
+
+void MinesweeperUI::SetMediumGame()
+{
+	m_minesweeperGame->SetStrategy(EDifficulty::MEDIUM);
+	m_minesweeperGame->RestartGame();
+
+}
+
+void MinesweeperUI::SetHardGame()
+{
+	m_minesweeperGame->SetStrategy(EDifficulty::HARD);
+	m_minesweeperGame->RestartGame();
+
+}
 void MinesweeperUI::OpenConfigDialog()
 {
 	MinesweeperConfigDialog configDialog(this);
@@ -55,8 +84,9 @@ void MinesweeperUI::OpenConfigDialog()
 		int mines = configDialog.GetMines();
 		std::string theme = configDialog.GetTheme().toStdString();
 		int timer = configDialog.GetTimer() ;
-
-		m_minesweeperGame->SetSettings(width, height, mines, theme, timer);
+		
+		IStrategyPtr strategy = std::make_shared<CustomStrategy>(width, height, mines, timer,theme);
+		m_minesweeperGame->SetStrategy(strategy);
 		m_minesweeperGame->RestartGame();
 	}
 }

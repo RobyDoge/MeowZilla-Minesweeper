@@ -27,6 +27,9 @@ private:
     void CreateRestartButton();
     void CreateMenuBar();
     void OpenConfigDialog();
+    void SetEasyGame();
+    void SetMediumGame();
+	void SetHardGame();
     bool eventFilter(QObject* obj, QEvent* event) override;
 
 
