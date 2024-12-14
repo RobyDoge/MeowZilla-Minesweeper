@@ -44,6 +44,7 @@ public:
 	int GetFlagsNumber() override;
 
 private:
+	void ResetListeners();
 	void CheckAdjacentMines(CellPtr cell) override;
 	void SetUnrevealedCells();
 	bool IsOutOfBounds(int row, int column);
