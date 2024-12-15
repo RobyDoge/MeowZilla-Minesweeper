@@ -1,4 +1,5 @@
 #pragma once
+
 //! Enum class for the states of the game
 enum class EGameState {
 	//! Game is over

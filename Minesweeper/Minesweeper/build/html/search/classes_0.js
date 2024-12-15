@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['icell_0',['ICell',['../classICell.html',1,'']]],
-  ['iminesweepergame_1',['IMinesweeperGame',['../classIMinesweeperGame.html',1,'']]],
-  ['iminesweeperlistener_2',['IMinesweeperListener',['../classIMinesweeperListener.html',1,'']]]
+  ['customstrategy_0',['CustomStrategy',['../classCustomStrategy.html',1,'']]]
 ];

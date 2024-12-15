@@ -29,17 +29,35 @@ public:
 	void SetStrategy(EDifficulty difficulty) override;
 
 public:
+	/*! Method to set the game's width
+		\param width is an integer representing the width of the game window
+	*/
 	void SetWidth(int width);
+	/*! Method to set the game's height
+		\param height is an integer representing the height of the game window
+	*/
 	void SetHeight(int height);
+	/*! Method to set the game's number of mines
+		\param minesNumber is an integer representing the number of mines in the game
+	*/
 	void SetMinesNumber(int minesNumber);
+	/*! Method to set the game's theme
+		\param theme is a string representing the theme of the game
+	*/
 	void SetTheme(const std::string& theme);
+	/*! Method to set the game's timer
+		\param timer is an integer representing the timer of the game
+	*/
 	void SetTimer(int timer);
+	/*! Getter method that returns the game's theme */
 	std::string GetTheme() const;
 	int GetTimer() override;
 	int GetWidth() override;
 	int GetHeight() override;
+	/*! Getter method that returns the game's cells stored in a matrix of CellPtr */
 	std::vector<std::vector<CellPtr>> GetCells();
 	CellPtr GetCell(int row, int column) override;
+	/*! Getter method that returns the game's state stored as an EGameState value */
 	EGameState GetGameState();
 	int GetFlagsNumber() override;
 
@@ -53,7 +71,6 @@ private:
 	void EndGame() override;
 	void CountdownTimer() override;
 	void SetSettings(); //this is called for when a strategy is selected
-
 
 	std::vector<IMinesweeperListener*> m_listeners;
 	std::vector<std::vector<CellPtr>> m_cells;

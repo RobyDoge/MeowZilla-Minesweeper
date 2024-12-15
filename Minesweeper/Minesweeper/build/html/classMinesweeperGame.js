@@ -5,7 +5,9 @@ var classMinesweeperGame =
     [ "FlagCell", "classMinesweeperGame.html#a7370800495c1151750203fc33f6dd894", null ],
     [ "GenerateMines", "classMinesweeperGame.html#a9ea97c8621acce8012d774fd3ac2b173", null ],
     [ "GetCell", "classMinesweeperGame.html#a833da650dc86b619a7e4f144ab49e9dc", null ],
+    [ "GetCells", "classMinesweeperGame.html#ad43aafcb21b5ed07b5b360b843331f08", null ],
     [ "GetFlagsNumber", "classMinesweeperGame.html#a27a1390ee00ad7ca95d799151b48afbd", null ],
+    [ "GetGameState", "classMinesweeperGame.html#adaf7704f92742f2d2a578770b972b2fe", null ],
     [ "GetHeight", "classMinesweeperGame.html#a75b3df3a543babe3cf652c33fd499612", null ],
     [ "GetTheme", "classMinesweeperGame.html#a3a3a3d1fb4f996fee20a3c6be5a74ee6", null ],
     [ "GetTimer", "classMinesweeperGame.html#a2789ac6adb45f9a7635c48e74023f844", null ],
@@ -13,5 +15,12 @@ var classMinesweeperGame =
     [ "RemoveMinesweeperListener", "classMinesweeperGame.html#a02ba6185b1f9d73fc0463bd6b4a821c6", null ],
     [ "RestartGame", "classMinesweeperGame.html#aa7b81f27fa16bcc51ca14cec1c4a8c83", null ],
     [ "RevealCells", "classMinesweeperGame.html#acfe0755d480f7b656a73c670d5c192d5", null ],
-    [ "SetSettings", "classMinesweeperGame.html#aa5758009416054c7b4af938679792eb2", null ]
+    [ "SetHeight", "classMinesweeperGame.html#a6a17e4c58c08e909233f8f5d3cb623ff", null ],
+    [ "SetMinesNumber", "classMinesweeperGame.html#ae1370977afc992b6e71d8ffbc1ed9a81", null ],
+    [ "SetSettings", "classMinesweeperGame.html#aa5758009416054c7b4af938679792eb2", null ],
+    [ "SetStrategy", "classMinesweeperGame.html#af7c9a718b3164284dc05963c482ac109", null ],
+    [ "SetStrategy", "classMinesweeperGame.html#ad3a61f62eeb95a85427d28f185b865ee", null ],
+    [ "SetTheme", "classMinesweeperGame.html#a75178c4dbb8e0f889a73dab11dcce5d1", null ],
+    [ "SetTimer", "classMinesweeperGame.html#a82946e2830d2a06270b090c071f7cfe2", null ],
+    [ "SetWidth", "classMinesweeperGame.html#acd8d8b3e8c187bd723c67294a85b926c", null ]
 ];

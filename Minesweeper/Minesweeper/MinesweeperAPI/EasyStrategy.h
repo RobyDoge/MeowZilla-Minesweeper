@@ -10,13 +10,12 @@ public:
 	int GetTimer() override;
 	std::string GetTheme() override;
 
-
 private:
 	int m_width = 10;
 	int m_height = 10;
 	int m_minesNumber = 10;
 	int m_timer = -1;
-	std::string m_theme = "Aurora Borealis";
+	std::string m_theme = AURORA_BOREALIS;
 
 };
 

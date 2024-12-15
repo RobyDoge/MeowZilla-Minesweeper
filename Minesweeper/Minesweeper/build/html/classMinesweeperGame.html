@@ -109,26 +109,21 @@ Inheritance diagram for MinesweeperGame:</div>
  <div class="center">
   <img src="classMinesweeperGame.png" usemap="#MinesweeperGame_map" alt=""/>
   <map id="MinesweeperGame_map" name="MinesweeperGame_map">
-<area href="classIMinesweeperGame.html" title="Interface class for the Minesweeper game." alt="IMinesweeperGame" shape="rect" coords="0,0,123,24"/>
+<area href="classIMinesweeperGame.html" title="Interface class for the Minesweeper game implemented in MinesweeperGame class." alt="IMinesweeperGame" shape="rect" coords="0,0,123,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a91363ac33df15f7e31dc07d040687c69" id="r_a91363ac33df15f7e31dc07d040687c69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91363ac33df15f7e31dc07d040687c69">AddMinesweeperListener</a> (<a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> *listener) override</td></tr>
-<tr class="memdesc:a91363ac33df15f7e31dc07d040687c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to add a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer to the game.  <br /></td></tr>
 <tr class="separator:a91363ac33df15f7e31dc07d040687c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ba6185b1f9d73fc0463bd6b4a821c6" id="r_a02ba6185b1f9d73fc0463bd6b4a821c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02ba6185b1f9d73fc0463bd6b4a821c6">RemoveMinesweeperListener</a> (<a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> *listener) override</td></tr>
-<tr class="memdesc:a02ba6185b1f9d73fc0463bd6b4a821c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to remove a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer from the game.  <br /></td></tr>
 <tr class="separator:a02ba6185b1f9d73fc0463bd6b4a821c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ea97c8621acce8012d774fd3ac2b173" id="r_a9ea97c8621acce8012d774fd3ac2b173"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ea97c8621acce8012d774fd3ac2b173">GenerateMines</a> (int clickedCellRow, int clickedCellColumn) override</td></tr>
-<tr class="memdesc:a9ea97c8621acce8012d774fd3ac2b173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to generate mines based on the clicked Cell row and column.  <br /></td></tr>
 <tr class="separator:a9ea97c8621acce8012d774fd3ac2b173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b81f27fa16bcc51ca14cec1c4a8c83" id="r_aa7b81f27fa16bcc51ca14cec1c4a8c83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7b81f27fa16bcc51ca14cec1c4a8c83">RestartGame</a> () override</td></tr>
-<tr class="memdesc:aa7b81f27fa16bcc51ca14cec1c4a8c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to restart the game.  <br /></td></tr>
 <tr class="separator:aa7b81f27fa16bcc51ca14cec1c4a8c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfe0755d480f7b656a73c670d5c192d5" id="r_acfe0755d480f7b656a73c670d5c192d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfe0755d480f7b656a73c670d5c192d5">RevealCells</a> (CellPtr cell) override</td></tr>
-<tr class="memdesc:acfe0755d480f7b656a73c670d5c192d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the cells to unrevealed.  <br /></td></tr>
 <tr class="separator:acfe0755d480f7b656a73c670d5c192d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb13ca95ec5b180886768a47ad8eafc2" id="r_afb13ca95ec5b180886768a47ad8eafc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb13ca95ec5b180886768a47ad8eafc2">CheckCell</a> (CellPtr cell) override</td></tr>
 <tr class="separator:afb13ca95ec5b180886768a47ad8eafc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,53 +131,42 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7370800495c1151750203fc33f6dd894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5758009416054c7b4af938679792eb2" id="r_aa5758009416054c7b4af938679792eb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5758009416054c7b4af938679792eb2">SetSettings</a> (int width, int height, int minesNumber, std::string theme, int timer) override</td></tr>
 <tr class="separator:aa5758009416054c7b4af938679792eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8d8b3e8c187bd723c67294a85b926c" id="r_acd8d8b3e8c187bd723c67294a85b926c"><td class="memItemLeft" align="right" valign="top"><a id="acd8d8b3e8c187bd723c67294a85b926c" name="acd8d8b3e8c187bd723c67294a85b926c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWidth</b> (int width)</td></tr>
+<tr class="memitem:ad3a61f62eeb95a85427d28f185b865ee" id="r_ad3a61f62eeb95a85427d28f185b865ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3a61f62eeb95a85427d28f185b865ee">SetStrategy</a> (IStrategyPtr strategy) override</td></tr>
+<tr class="separator:ad3a61f62eeb95a85427d28f185b865ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c9a718b3164284dc05963c482ac109" id="r_af7c9a718b3164284dc05963c482ac109"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7c9a718b3164284dc05963c482ac109">SetStrategy</a> (EDifficulty difficulty) override</td></tr>
+<tr class="separator:af7c9a718b3164284dc05963c482ac109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8d8b3e8c187bd723c67294a85b926c" id="r_acd8d8b3e8c187bd723c67294a85b926c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd8d8b3e8c187bd723c67294a85b926c">SetWidth</a> (int width)</td></tr>
 <tr class="separator:acd8d8b3e8c187bd723c67294a85b926c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a17e4c58c08e909233f8f5d3cb623ff" id="r_a6a17e4c58c08e909233f8f5d3cb623ff"><td class="memItemLeft" align="right" valign="top"><a id="a6a17e4c58c08e909233f8f5d3cb623ff" name="a6a17e4c58c08e909233f8f5d3cb623ff"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHeight</b> (int height)</td></tr>
+<tr class="memitem:a6a17e4c58c08e909233f8f5d3cb623ff" id="r_a6a17e4c58c08e909233f8f5d3cb623ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a17e4c58c08e909233f8f5d3cb623ff">SetHeight</a> (int height)</td></tr>
 <tr class="separator:a6a17e4c58c08e909233f8f5d3cb623ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1370977afc992b6e71d8ffbc1ed9a81" id="r_ae1370977afc992b6e71d8ffbc1ed9a81"><td class="memItemLeft" align="right" valign="top"><a id="ae1370977afc992b6e71d8ffbc1ed9a81" name="ae1370977afc992b6e71d8ffbc1ed9a81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMinesNumber</b> (int minesNumber)</td></tr>
+<tr class="memitem:ae1370977afc992b6e71d8ffbc1ed9a81" id="r_ae1370977afc992b6e71d8ffbc1ed9a81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1370977afc992b6e71d8ffbc1ed9a81">SetMinesNumber</a> (int minesNumber)</td></tr>
 <tr class="separator:ae1370977afc992b6e71d8ffbc1ed9a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75178c4dbb8e0f889a73dab11dcce5d1" id="r_a75178c4dbb8e0f889a73dab11dcce5d1"><td class="memItemLeft" align="right" valign="top"><a id="a75178c4dbb8e0f889a73dab11dcce5d1" name="a75178c4dbb8e0f889a73dab11dcce5d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTheme</b> (const std::string &amp;theme)</td></tr>
+<tr class="memitem:a75178c4dbb8e0f889a73dab11dcce5d1" id="r_a75178c4dbb8e0f889a73dab11dcce5d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75178c4dbb8e0f889a73dab11dcce5d1">SetTheme</a> (const std::string &amp;theme)</td></tr>
 <tr class="separator:a75178c4dbb8e0f889a73dab11dcce5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82946e2830d2a06270b090c071f7cfe2" id="r_a82946e2830d2a06270b090c071f7cfe2"><td class="memItemLeft" align="right" valign="top"><a id="a82946e2830d2a06270b090c071f7cfe2" name="a82946e2830d2a06270b090c071f7cfe2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTimer</b> (int timer)</td></tr>
+<tr class="memitem:a82946e2830d2a06270b090c071f7cfe2" id="r_a82946e2830d2a06270b090c071f7cfe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82946e2830d2a06270b090c071f7cfe2">SetTimer</a> (int timer)</td></tr>
 <tr class="separator:a82946e2830d2a06270b090c071f7cfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a3a3d1fb4f996fee20a3c6be5a74ee6" id="r_a3a3a3d1fb4f996fee20a3c6be5a74ee6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a3a3d1fb4f996fee20a3c6be5a74ee6">GetTheme</a> () const</td></tr>
-<tr class="memdesc:a3a3a3d1fb4f996fee20a3c6be5a74ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter method that returns the game's current theme.  <br /></td></tr>
 <tr class="separator:a3a3a3d1fb4f996fee20a3c6be5a74ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2789ac6adb45f9a7635c48e74023f844" id="r_a2789ac6adb45f9a7635c48e74023f844"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2789ac6adb45f9a7635c48e74023f844">GetTimer</a> () override</td></tr>
-<tr class="memdesc:a2789ac6adb45f9a7635c48e74023f844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter method that returns the game's timer.  <br /></td></tr>
 <tr class="separator:a2789ac6adb45f9a7635c48e74023f844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881472e5ca3bb5c459f3a0d4457b3c90" id="r_a881472e5ca3bb5c459f3a0d4457b3c90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a881472e5ca3bb5c459f3a0d4457b3c90">GetWidth</a> () override</td></tr>
-<tr class="memdesc:a881472e5ca3bb5c459f3a0d4457b3c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter method that returns the game's width.  <br /></td></tr>
 <tr class="separator:a881472e5ca3bb5c459f3a0d4457b3c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75b3df3a543babe3cf652c33fd499612" id="r_a75b3df3a543babe3cf652c33fd499612"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75b3df3a543babe3cf652c33fd499612">GetHeight</a> () override</td></tr>
-<tr class="memdesc:a75b3df3a543babe3cf652c33fd499612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter method that returns the game's height.  <br /></td></tr>
 <tr class="separator:a75b3df3a543babe3cf652c33fd499612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43aafcb21b5ed07b5b360b843331f08" id="r_ad43aafcb21b5ed07b5b360b843331f08"><td class="memItemLeft" align="right" valign="top"><a id="ad43aafcb21b5ed07b5b360b843331f08" name="ad43aafcb21b5ed07b5b360b843331f08"></a>
-std::vector&lt; std::vector&lt; CellPtr &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCells</b> ()</td></tr>
+<tr class="memitem:ad43aafcb21b5ed07b5b360b843331f08" id="r_ad43aafcb21b5ed07b5b360b843331f08"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; CellPtr &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad43aafcb21b5ed07b5b360b843331f08">GetCells</a> ()</td></tr>
 <tr class="separator:ad43aafcb21b5ed07b5b360b843331f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833da650dc86b619a7e4f144ab49e9dc" id="r_a833da650dc86b619a7e4f144ab49e9dc"><td class="memItemLeft" align="right" valign="top">CellPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a833da650dc86b619a7e4f144ab49e9dc">GetCell</a> (int row, int column) override</td></tr>
-<tr class="memdesc:a833da650dc86b619a7e4f144ab49e9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter method that returns the Cell at the specified row and column.  <br /></td></tr>
 <tr class="separator:a833da650dc86b619a7e4f144ab49e9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaf7704f92742f2d2a578770b972b2fe" id="r_adaf7704f92742f2d2a578770b972b2fe"><td class="memItemLeft" align="right" valign="top"><a id="adaf7704f92742f2d2a578770b972b2fe" name="adaf7704f92742f2d2a578770b972b2fe"></a>
-EGameState&#160;</td><td class="memItemRight" valign="bottom"><b>GetGameState</b> ()</td></tr>
+<tr class="memitem:adaf7704f92742f2d2a578770b972b2fe" id="r_adaf7704f92742f2d2a578770b972b2fe"><td class="memItemLeft" align="right" valign="top">EGameState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaf7704f92742f2d2a578770b972b2fe">GetGameState</a> ()</td></tr>
 <tr class="separator:adaf7704f92742f2d2a578770b972b2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a1390ee00ad7ca95d799151b48afbd" id="r_a27a1390ee00ad7ca95d799151b48afbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27a1390ee00ad7ca95d799151b48afbd">GetFlagsNumber</a> () override</td></tr>
-<tr class="memdesc:a27a1390ee00ad7ca95d799151b48afbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter method that returns the number of flags within the game.  <br /></td></tr>
 <tr class="separator:a27a1390ee00ad7ca95d799151b48afbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIMinesweeperGame"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classIMinesweeperGame')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIMinesweeperGame.html">IMinesweeperGame</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classIMinesweeperGame"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classIMinesweeperGame')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classIMinesweeperGame.html">IMinesweeperGame</a></td></tr>
-<tr class="memitem:a7a8355c303118e39df4a1fec7f5988f3 inherit pub_static_methods_classIMinesweeperGame" id="r_a7a8355c303118e39df4a1fec7f5988f3"><td class="memItemLeft" align="right" valign="top">
-static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame</b> ()</td></tr>
-<tr class="memdesc:a7a8355c303118e39df4a1fec7f5988f3 inherit pub_static_methods_classIMinesweeperGame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to create a game instance, used so that the UI only interacts with the game through the interface. <br /></td></tr>
+<tr class="memitem:a7a8355c303118e39df4a1fec7f5988f3 inherit pub_static_methods_classIMinesweeperGame" id="r_a7a8355c303118e39df4a1fec7f5988f3"><td class="memItemLeft" align="right" valign="top">static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMinesweeperGame.html#a7a8355c303118e39df4a1fec7f5988f3">CreateGame</a> ()</td></tr>
 <tr class="separator:a7a8355c303118e39df4a1fec7f5988f3 inherit pub_static_methods_classIMinesweeperGame"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -208,8 +192,12 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Method to add a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer to the game. </p>
+<p>Method to add a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer to the game </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>is a <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer that handles notifications </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#a280a32b35ab85a0ee69f0f01a7ce58f8">IMinesweeperGame</a>.</p>
 
@@ -237,7 +225,18 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method handles the behavior when a cell in the game is clicked. It checks the state of the game and the cell and performs appropriate actions such as revealing cells, generating mines, or ending the game. </p>
+<p>This method handles the behavior when a cell in the game is clicked.</p><ul>
+<li>It checks the state of the game and the cell</li>
+<li>If the game hasn't started, it calls the GenerateMines method</li>
+<li>Calls the RevealCells method passing the clicked cell as an argument</li>
+<li>Checks for victory using the CheckVictory method <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html">ICell</a> pointer representing the cell that was clicked </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#ae8ee8b160a4024234f53f7d0f0e0f553">IMinesweeperGame</a>.</p>
 
@@ -265,7 +264,16 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to calculate the number of mines adjacent to the given cell. It iterates over all neighboring cells, checks their states, and increments the count of adjacent mines in the given cell if a mine is found. </p>
+<p>Method to calculate the number of mines adjacent to the given cell.</p><ul>
+<li>Iterates over all neighboring cells and checks their states</li>
+<li>Increments the count of adjacent mines in the given cell if a mine is found <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html">ICell</a> pointer representing the cell to check for adjacent mines </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#ae81399fa4c7affad6c26c3ff4473083c">IMinesweeperGame</a>.</p>
 
@@ -297,8 +305,13 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Method to generate mines based on the clicked Cell row and column. </p>
+<p>Method to generate mines based on the clicked Cell row and column </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clickedCellRow</td><td>is an integer representing the row of the clicked cell </td></tr>
+    <tr><td class="paramname">clickedCellColumn</td><td>is an integer representing the column of the clicked cell </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#ad9eadb543d467c0e26ad3049d42a6ac0">IMinesweeperGame</a>.</p>
 
@@ -330,10 +343,33 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Getter method that returns the Cell at the specified row and column. </p>
+<p>Getter method that returns the Cell at the specified row and column </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td>is an integer representing the row of the cell </td></tr>
+    <tr><td class="paramname">column</td><td>is an integer representing the column of the cell </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#a476e451a238b5335a8e8af92847d4dbf">IMinesweeperGame</a>.</p>
+
+</div>
+</div>
+<a id="ad43aafcb21b5ed07b5b360b843331f08" name="ad43aafcb21b5ed07b5b360b843331f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43aafcb21b5ed07b5b360b843331f08">&#9670;&#160;</a></span>GetCells()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; CellPtr &gt; &gt; MinesweeperGame::GetCells </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Getter method that returns the game's cells stored in a matrix of CellPtr </p>
 
 </div>
 </div>
@@ -359,10 +395,27 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Getter method that returns the number of flags within the game. </p>
+<p>Getter method that returns the number of flags within the game </p>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#a88d914a6718cb2ad6df60a964c8d001e">IMinesweeperGame</a>.</p>
+
+</div>
+</div>
+<a id="adaf7704f92742f2d2a578770b972b2fe" name="adaf7704f92742f2d2a578770b972b2fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf7704f92742f2d2a578770b972b2fe">&#9670;&#160;</a></span>GetGameState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EGameState MinesweeperGame::GetGameState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Getter method that returns the game's state stored as an EGameState value </p>
 
 </div>
 </div>
@@ -388,8 +441,7 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Getter method that returns the game's height. </p>
+<p>Getter method that returns the game's height </p>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#abd8e9fe7e1abf395260288f170a98715">IMinesweeperGame</a>.</p>
 
@@ -417,8 +469,7 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Getter method that returns the game's current theme. </p>
+<p>Getter method that returns the game's theme </p>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#acf098f756199b57a50b453f667c5ad09">IMinesweeperGame</a>.</p>
 
@@ -446,8 +497,7 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Getter method that returns the game's timer. </p>
+<p>Getter method that returns the game's timer </p>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#a0b050ab395689aea1e41d49ccda6ad9e">IMinesweeperGame</a>.</p>
 
@@ -475,8 +525,7 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Getter method that returns the game's width. </p>
+<p>Getter method that returns the game's width </p>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#a5498b89f2f702adfadccdf0abd101ec6">IMinesweeperGame</a>.</p>
 
@@ -504,8 +553,12 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Method to remove a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer from the game. </p>
+<p>Method to remove a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer from the game </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>is a <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer that handles notifications </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#ae2324130b040af5a5642bce7e66cea8d">IMinesweeperGame</a>.</p>
 
@@ -533,8 +586,7 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Method to restart the game. </p>
+<p>Method to restart the game </p>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#a8d7c1ab751bb5bf35fdcdf60fe00c0c8">IMinesweeperGame</a>.</p>
 
@@ -562,10 +614,60 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Method to set the cells to unrevealed. </p>
+<p>Method that sets the argument cell to revealed and checks for surrounding cells to reveal </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html">ICell</a> pointer representing the cell to be set to unrevealed </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#a75ea7ab1b31b84c228f7bff857aface3">IMinesweeperGame</a>.</p>
+
+</div>
+</div>
+<a id="a6a17e4c58c08e909233f8f5d3cb623ff" name="a6a17e4c58c08e909233f8f5d3cb623ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a17e4c58c08e909233f8f5d3cb623ff">&#9670;&#160;</a></span>SetHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MinesweeperGame::SetHeight </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Method to set the game's height </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">height</td><td>is an integer representing the height of the game window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1370977afc992b6e71d8ffbc1ed9a81" name="ae1370977afc992b6e71d8ffbc1ed9a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1370977afc992b6e71d8ffbc1ed9a81">&#9670;&#160;</a></span>SetMinesNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MinesweeperGame::SetMinesNumber </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minesNumber</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Method to set the game's number of mines </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minesNumber</td><td>is an integer representing the number of mines in the game </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -614,10 +716,163 @@ static IGamePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGame
 <li>Sets the game window's width and height</li>
 <li>Sets the game's number of mines</li>
 <li>Sets the game's theme</li>
-<li>Loops through the listeners and calls the OnSettingsUpdated method </li>
+<li>Loops through the listeners and calls the OnSettingsUpdated method <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>is an integer representing the width of the game window </td></tr>
+    <tr><td class="paramname">height</td><td>is an integer representing the height of the game window </td></tr>
+    <tr><td class="paramname">minesNumber</td><td>is an integer representing the number of mines in the game </td></tr>
+    <tr><td class="paramname">theme</td><td>is a string representing the theme of the game </td></tr>
+    <tr><td class="paramname">timer</td><td>is an integer representing the timer of the game </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
 </ul>
 
 <p>Implements <a class="el" href="classIMinesweeperGame.html#a5b428c7c4e29bcb2a78fedb56aef1625">IMinesweeperGame</a>.</p>
+
+</div>
+</div>
+<a id="af7c9a718b3164284dc05963c482ac109" name="af7c9a718b3164284dc05963c482ac109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c9a718b3164284dc05963c482ac109">&#9670;&#160;</a></span>SetStrategy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MinesweeperGame::SetStrategy </td>
+          <td>(</td>
+          <td class="paramtype">EDifficulty</td>          <td class="paramname"><span class="paramname"><em>difficulty</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to set the difficulty of the game:</p><ul>
+<li>Sets the game's strategy to the strategy corresponding to the given difficulty</li>
+<li>Calls the SetSettings method of the strategy</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">difficulty</td><td>is an EDifficulty arguments that represents the difficulty which will set the strategy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classIMinesweeperGame.html#aa5ed02a8fa35382e5a37773bc523410c">IMinesweeperGame</a>.</p>
+
+</div>
+</div>
+<a id="ad3a61f62eeb95a85427d28f185b865ee" name="ad3a61f62eeb95a85427d28f185b865ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a61f62eeb95a85427d28f185b865ee">&#9670;&#160;</a></span>SetStrategy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MinesweeperGame::SetStrategy </td>
+          <td>(</td>
+          <td class="paramtype">IStrategyPtr</td>          <td class="paramname"><span class="paramname"><em>strategy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to set the strategy of the game:</p><ul>
+<li>Sets the game's strategy to the given strategy</li>
+<li>Calls the SetSettings method of the strategy</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strategy</td><td>is an <a class="el" href="classIStrategy.html">IStrategy</a> pointer that represents the strategy to be set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classIMinesweeperGame.html#a436c27dce599faedaa4d31d985920475">IMinesweeperGame</a>.</p>
+
+</div>
+</div>
+<a id="a75178c4dbb8e0f889a73dab11dcce5d1" name="a75178c4dbb8e0f889a73dab11dcce5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75178c4dbb8e0f889a73dab11dcce5d1">&#9670;&#160;</a></span>SetTheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MinesweeperGame::SetTheme </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>theme</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Method to set the game's theme </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">theme</td><td>is a string representing the theme of the game </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82946e2830d2a06270b090c071f7cfe2" name="a82946e2830d2a06270b090c071f7cfe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82946e2830d2a06270b090c071f7cfe2">&#9670;&#160;</a></span>SetTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MinesweeperGame::SetTimer </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Method to set the game's timer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>is an integer representing the timer of the game </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acd8d8b3e8c187bd723c67294a85b926c" name="acd8d8b3e8c187bd723c67294a85b926c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8d8b3e8c187bd723c67294a85b926c">&#9670;&#160;</a></span>SetWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MinesweeperGame::SetWidth </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Method to set the game's width </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>is an integer representing the width of the game window </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
