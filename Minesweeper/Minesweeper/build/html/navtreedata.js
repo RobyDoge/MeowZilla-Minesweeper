@@ -42,7 +42,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"ECellState_8h_source.html"
+"CustomStrategy_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

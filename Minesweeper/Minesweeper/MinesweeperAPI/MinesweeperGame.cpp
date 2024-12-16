@@ -3,24 +3,24 @@
 #include "EasyStrategy.h"
 #include "HardStrategy.h"
 #include "MediumStrategy.h"
-#include "Themes.h"
 
 MinesweeperGame::MinesweeperGame()
 {
+	m_revealedCells = 0;
 	m_width = 10;
 	m_height = 10;
 	m_minesNumber = 10;
 	m_flagsNumber = m_minesNumber;
 	m_gameState = EGameState::FIRSTCLICK;
-	m_theme = DARK_BLUE;
+	m_theme = "Dark Blue";
 	m_timer = -1;
 	SetUnrevealedCells();
+	ResetListeners();
 }
 
 bool MinesweeperGame::AddMinesweeperListener(IMinesweeperListener* listener)
 {
 	m_listeners.push_back(listener);
-
 	return true;
 }
 
@@ -38,7 +38,7 @@ bool MinesweeperGame::RemoveMinesweeperListener(IMinesweeperListener* listener)
 	return false;
 }
 
-void MinesweeperGame::GenerateMines(int clickedCellRow, int clickedCellColumn)//redenumire
+void MinesweeperGame::GenerateMines(int clickedCellRow, int clickedCellColumn)
 {
 	srand(time(NULL));
 	int xPos, yPos;
@@ -51,16 +51,8 @@ void MinesweeperGame::GenerateMines(int clickedCellRow, int clickedCellColumn)//
 		yPos = rand() % m_width;
 		if (xPos != clickedCellRow && yPos != clickedCellColumn)
 		{
-			if (m_cells[xPos][yPos]->GetState() == ECellState::UNREVEALED) // se va adauga conditie sa nu se genereze mina pe click
-			{
-				m_cells[xPos][yPos]->SetState(ECellState::MINE);
-				indexMine++;
-			}
-			if (m_cells[xPos][yPos]->GetState() == ECellState::FLAGGED) // se va adauga conditie sa nu se genereze mina pe click
-			{
-				m_cells[xPos][yPos]->SetState(ECellState::FLAGGED_MINE);
-				indexMine++;
-			}
+			m_cells[xPos][yPos]->SetState(ECellState::MINE);
+			indexMine++;
 		}
 	}
 	if (m_timer != -1)
@@ -73,18 +65,14 @@ void MinesweeperGame::RestartGame()
 	m_flagsNumber = m_minesNumber;
 	m_revealedCells = 0;
 	m_gameState = EGameState::FIRSTCLICK;
-	for (auto listener : m_listeners)
-	{
-		listener->OnFlagCountChanged(m_flagsNumber);
-		listener->OnTimerChanged(m_timer);
-	}
+	ResetListeners();
 }
 
 void MinesweeperGame::RevealCells(CellPtr cell)
 {
 	std::queue<CellPtr> filledCells;
+	cell->SetState(ECellState::REVEALED);
 	filledCells.push(cell);
-	filledCells.back()->SetState(ECellState::REVEALED);
 	while (!filledCells.empty())
 	{
 		CheckAdjacentMines(filledCells.front());
@@ -137,13 +125,31 @@ void MinesweeperGame::CheckCell(CellPtr cell)
 	}
 }
 
+void MinesweeperGame::ResetListeners()
+{
+	for (auto listener : m_listeners)
+	{
+		listener->OnFlagCountChanged(m_flagsNumber);
+		listener->OnTimerChanged(m_timer);
+	}
+}
+
 void MinesweeperGame::CheckAdjacentMines(CellPtr cell)
 {
 	for (int x = cell->GetRow() - 1; x <= cell->GetRow() + 1; x++)
+	{
 		for (int y = cell->GetColumn() - 1; y <= cell->GetColumn() + 1; y++)
+		{
 			if (!IsOutOfBounds(x, y))
+			{
 				if (m_cells[x][y]->GetState() == ECellState::MINE || m_cells[x][y]->GetState() == ECellState::FLAGGED_MINE)
+
+				{
 					cell->AddAdjacentMine();
+				}
+			}
+		}		
+	}
 }
 
 void MinesweeperGame::FlagCell(CellPtr cell)
@@ -202,10 +208,16 @@ void MinesweeperGame::EndGame()
 {
 	for (auto listener : m_listeners)
 	{
-		for (int row = 0; row < m_height; row++)
+		for (int row = 0; row < m_height; row++) 
+		{
 			for (int column = 0; column < m_width; column++)
+			{
 				if (m_cells[row][column]->GetState() == ECellState::MINE)
+				{
 					listener->OnCellImageChange(m_cells[row][column], m_gameState, m_theme);
+				}
+			}	
+		}
 		if (m_gameState == EGameState::GAMEOVER)
 			listener->OnGameOver();
 		else
@@ -305,8 +317,9 @@ void MinesweeperGame::SetUnrevealedCells()
 		std::vector<CellPtr> line;
 
 		for (int column = 0; column < m_width; column++)
+		{
 			line.push_back(std::make_shared<MinesweeperCell>(row, column));
-
+		}
 		m_cells.push_back(line);
 	}
 }

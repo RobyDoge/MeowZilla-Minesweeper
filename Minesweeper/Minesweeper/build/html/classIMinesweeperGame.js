@@ -18,5 +18,7 @@ var classIMinesweeperGame =
     [ "RemoveMinesweeperListener", "classIMinesweeperGame.html#ae2324130b040af5a5642bce7e66cea8d", null ],
     [ "RestartGame", "classIMinesweeperGame.html#a8d7c1ab751bb5bf35fdcdf60fe00c0c8", null ],
     [ "RevealCells", "classIMinesweeperGame.html#a75ea7ab1b31b84c228f7bff857aface3", null ],
-    [ "SetSettings", "classIMinesweeperGame.html#a5b428c7c4e29bcb2a78fedb56aef1625", null ]
+    [ "SetSettings", "classIMinesweeperGame.html#a5b428c7c4e29bcb2a78fedb56aef1625", null ],
+    [ "SetStrategy", "classIMinesweeperGame.html#aa5ed02a8fa35382e5a37773bc523410c", null ],
+    [ "SetStrategy", "classIMinesweeperGame.html#a436c27dce599faedaa4d31d985920475", null ]
 ];
