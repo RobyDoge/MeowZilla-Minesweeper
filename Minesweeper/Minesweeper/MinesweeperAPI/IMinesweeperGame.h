@@ -8,35 +8,35 @@
 
 using IGamePtr = std::shared_ptr<class IMinesweeperGame>;
 
-//! Interface class for the Minesweeper game implemented in MinesweeperGame class
+//! Interface class for the Minesweeper game implemented in MinesweeperGame class.
 class IMinesweeperGame
 {
 public:
 	/*******************************************//**
- 	*  Method to add a listener IMinesweeperListener pointer to the game
+ 	*  Method to add a listener IMinesweeperListener pointer to the game.
 		\param listener is a IMinesweeperListener pointer that handles notifications
  	***********************************************/
 	virtual bool AddMinesweeperListener(IMinesweeperListener* listener) = 0;
 
 	/*******************************************//**
- 	*  Method to remove a listener IMinesweeperListener pointer from the game
+ 	*  Method to remove a listener IMinesweeperListener pointer from the game.
 		\param listener is a IMinesweeperListener pointer that handles notifications
  	***********************************************/
 	virtual bool RemoveMinesweeperListener(IMinesweeperListener* listener) = 0;
 
 public:
 	/*******************************************//**
- 	*  Method to generate mines based on the clicked Cell row and column
+ 	*  Method to generate mines based on the clicked Cell row and column.
 		\param clickedCellRow is an integer representing the row of the clicked cell
 		\param clickedCellColumn is an integer representing the column of the clicked cell
  	***********************************************/
 	virtual void GenerateMines(int clickedCellRow, int clickedCellColumn) = 0;
 
-	/*! Method to restart the game*/
+	/*! Method to restart the game.*/
 	virtual void RestartGame() = 0;
 
 	/*******************************************//**
- 	*  Method to generate mines based on the clicked Cell row and column
+ 	*  Method to generate mines based on the clicked Cell row and column:
 		- changes the game state to GAMEOVER
 		- calls the EndGame method
  	***********************************************/
@@ -62,12 +62,12 @@ public:
 	/*!
 		Method to the timer in a separate thread, continuously updating the remaining time.
 		- Notifies registered listeners about timer changes.
-		-If the timer reaches zero or the game state changes to a terminal state (not WIN or FIRSTCLICK), the game ends. \n\n
+		- If the timer reaches zero or the game state changes to a terminal state (not WIN or FIRSTCLICK), the game ends. \n\n
 		Implemented in MinesweeperGame, private method.
 	*/
 	virtual void CountdownTimer() = 0;
 
-	/*! Method that sets the argument cell to revealed and checks for surrounding cells to reveal 
+	/*! Method that sets the argument cell to revealed and checks for surrounding cells to reveal.
 		\param cell is an ICell pointer representing the cell to be set to unrevealed
 	*/
 	virtual void RevealCells(CellPtr cell) = 0;
@@ -82,8 +82,6 @@ public:
 	*/
 	virtual void CheckCell(CellPtr cell) = 0;
 
-	//! Method to check the adjacent cells of a cell
-	//! Implemented in MinesweeperGame, private method.
 	/*!
 		Method that checks and counts the number of adjacent mines around a given cell. \n\n
 		- Iterates through the cells surrounding the specified cell 
@@ -91,6 +89,7 @@ public:
 		- Checks all possible adjacent cells 
 
 		\param cell is an ICell pointer representing the cell to check for adjacent mines
+		Implemented in MinesweeperGame, private method.
 	*/
 	virtual void CheckAdjacentMines(CellPtr cell) = 0;
 
@@ -135,29 +134,29 @@ public:
 	virtual void SetStrategy(EDifficulty difficulty) = 0;
 
 public:
-	/*! Getter method that returns the game's current theme */
+	/*! Getter method that returns the game's current theme. */
 	virtual std::string GetTheme() const = 0;
 
-	/*! Getter method that returns the game's timer */
+	/*! Getter method that returns the game's timer. */
 	virtual int GetTimer() = 0;
 
-	/*! Getter method that returns the game's width */
+	/*! Getter method that returns the game's width. */
 	virtual int GetWidth() = 0;
 
-	/*! Getter method that returns the game's height */
+	/*! Getter method that returns the game's height. */
 	virtual int GetHeight() = 0;
 
-	/*! Getter method that returns the number of flags within the game */
+	/*! Getter method that returns the number of flags within the game. */
 	virtual int GetFlagsNumber() = 0;
 
 	/*******************************************//**
- 	*  Getter method that returns the Cell at the specified row and column
+ 	*  Getter method that returns the Cell at the specified row and column.
 		\param row is an integer representing the row of the cell
 		\param column is an integer representing the column of the cell
  	***********************************************/
 	virtual CellPtr GetCell(int row, int column) = 0;
 
 public:
-	/*! Method to create a game instance, used so that the UI only interacts with the game through the interface */
+	/*! Method to create a game instance, used so that the UI only interacts with the game through the interface. */
 	static IGamePtr CreateGame();
 };

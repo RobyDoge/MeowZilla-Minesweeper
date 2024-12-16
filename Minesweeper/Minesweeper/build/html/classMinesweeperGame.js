@@ -1,5 +1,6 @@
 var classMinesweeperGame =
 [
+    [ "MinesweeperGame", "classMinesweeperGame.html#a4b8400eff852e41a1d1bf5ced74a2ed0", null ],
     [ "AddMinesweeperListener", "classMinesweeperGame.html#a91363ac33df15f7e31dc07d040687c69", null ],
     [ "CheckCell", "classMinesweeperGame.html#afb13ca95ec5b180886768a47ad8eafc2", null ],
     [ "FlagCell", "classMinesweeperGame.html#a7370800495c1151750203fc33f6dd894", null ],

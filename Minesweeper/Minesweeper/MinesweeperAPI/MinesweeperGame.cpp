@@ -7,9 +7,7 @@
 
 MinesweeperGame::MinesweeperGame()
 {
-
 	m_revealedCells = 0;
-	
 	m_width = 10;
 	m_height = 10;
 	m_minesNumber = 10;

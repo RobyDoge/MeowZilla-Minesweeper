@@ -104,20 +104,30 @@ $(function(){initNavTree('IStrategy_8h_source.html',''); initResizable(true); })
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include&lt;memory&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classIStrategy.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="classIStrategy.html">IStrategy</a></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetWidth() = 0;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetHeight() = 0;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetMinesNumber() = 0;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetTimer() = 0;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">virtual</span> std::string GetTheme() = 0;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classIStrategy.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="classIStrategy.html">IStrategy</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classIStrategy.html#a7520cb4ea6f2a0c07dbe281138122acb">   11</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classIStrategy.html#a7520cb4ea6f2a0c07dbe281138122acb">GetWidth</a>() = 0;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classIStrategy.html#aeb3ce9403a3467012b26d1bb0e7b702b">   14</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classIStrategy.html#aeb3ce9403a3467012b26d1bb0e7b702b">GetHeight</a>() = 0;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classIStrategy.html#afed51e06c45dae0028388dbbf63d78a2">   17</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classIStrategy.html#afed51e06c45dae0028388dbbf63d78a2">GetMinesNumber</a>() = 0;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classIStrategy.html#a06845d8bba6e4510adac7b376766ec8c">   20</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classIStrategy.html#a06845d8bba6e4510adac7b376766ec8c">GetTimer</a>() = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classIStrategy.html#a48bf93569c5405b41898f0a739bbdcda">   23</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="classIStrategy.html#a48bf93569c5405b41898f0a739bbdcda">GetTheme</a>() = 0;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
 </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using </span>IStrategyPtr = std::shared_ptr&lt;class IStrategy&gt;;</div>
-<div class="ttc" id="aclassIStrategy_html"><div class="ttname"><a href="classIStrategy.html">IStrategy</a></div><div class="ttdef"><b>Definition</b> IStrategy.h:6</div></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">using </span>IStrategyPtr = std::shared_ptr&lt;class IStrategy&gt;;</div>
+<div class="ttc" id="aclassIStrategy_html"><div class="ttname"><a href="classIStrategy.html">IStrategy</a></div><div class="ttdef"><b>Definition</b> IStrategy.h:8</div></div>
+<div class="ttc" id="aclassIStrategy_html_a06845d8bba6e4510adac7b376766ec8c"><div class="ttname"><a href="classIStrategy.html#a06845d8bba6e4510adac7b376766ec8c">IStrategy::GetTimer</a></div><div class="ttdeci">virtual int GetTimer()=0</div></div>
+<div class="ttc" id="aclassIStrategy_html_a48bf93569c5405b41898f0a739bbdcda"><div class="ttname"><a href="classIStrategy.html#a48bf93569c5405b41898f0a739bbdcda">IStrategy::GetTheme</a></div><div class="ttdeci">virtual std::string GetTheme()=0</div></div>
+<div class="ttc" id="aclassIStrategy_html_a7520cb4ea6f2a0c07dbe281138122acb"><div class="ttname"><a href="classIStrategy.html#a7520cb4ea6f2a0c07dbe281138122acb">IStrategy::GetWidth</a></div><div class="ttdeci">virtual int GetWidth()=0</div></div>
+<div class="ttc" id="aclassIStrategy_html_aeb3ce9403a3467012b26d1bb0e7b702b"><div class="ttname"><a href="classIStrategy.html#aeb3ce9403a3467012b26d1bb0e7b702b">IStrategy::GetHeight</a></div><div class="ttdeci">virtual int GetHeight()=0</div></div>
+<div class="ttc" id="aclassIStrategy_html_afed51e06c45dae0028388dbbf63d78a2"><div class="ttname"><a href="classIStrategy.html#afed51e06c45dae0028388dbbf63d78a2">IStrategy::GetMinesNumber</a></div><div class="ttdeci">virtual int GetMinesNumber()=0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -194,7 +194,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to add a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer to the game </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Method to add a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer to the game. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">listener</td><td>is a <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer that handles notifications </td></tr>
   </table>
@@ -227,7 +227,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to check the adjacent cells of a cell Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a>, private method.</p>
 <p>Method that checks and counts the number of adjacent mines around a given cell. <br  />
 <br  />
 </p><ul>
@@ -237,7 +236,7 @@ Static Public Member Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html">ICell</a> pointer representing the cell to check for adjacent mines </td></tr>
+    <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html">ICell</a> pointer representing the cell to check for adjacent mines Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a>, private method. </td></tr>
   </table>
   </dd>
 </dl>
@@ -335,7 +334,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Method to the timer in a separate thread, continuously updating the remaining time.</p><ul>
-<li>Notifies registered listeners about timer changes. -If the timer reaches zero or the game state changes to a terminal state (not WIN or FIRSTCLICK), the game ends. <br  />
+<li>Notifies registered listeners about timer changes.</li>
+<li>If the timer reaches zero or the game state changes to a terminal state (not WIN or FIRSTCLICK), the game ends. <br  />
 <br  />
 Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a>, private method. </li>
 </ul>
@@ -364,7 +364,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to create a game instance, used so that the UI only interacts with the game through the interface </p>
+<p>Method to create a game instance, used so that the UI only interacts with the game through the interface. </p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to generate mines based on the clicked Cell row and column</p><ul>
+<p>Method to generate mines based on the clicked Cell row and column:</p><ul>
 <li>changes the game state to GAMEOVER</li>
 <li>calls the EndGame method </li>
 </ul>
@@ -492,7 +492,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to generate mines based on the clicked Cell row and column </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Method to generate mines based on the clicked Cell row and column. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clickedCellRow</td><td>is an integer representing the row of the clicked cell </td></tr>
     <tr><td class="paramname">clickedCellColumn</td><td>is an integer representing the column of the clicked cell </td></tr>
@@ -530,7 +530,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Getter method that returns the Cell at the specified row and column </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Getter method that returns the Cell at the specified row and column. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">row</td><td>is an integer representing the row of the cell </td></tr>
     <tr><td class="paramname">column</td><td>is an integer representing the column of the cell </td></tr>
@@ -564,7 +564,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Getter method that returns the number of flags within the game </p>
+<p>Getter method that returns the number of flags within the game. </p>
 
 <p>Implemented in <a class="el" href="classMinesweeperGame.html#a27a1390ee00ad7ca95d799151b48afbd">MinesweeperGame</a>.</p>
 
@@ -592,7 +592,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Getter method that returns the game's height </p>
+<p>Getter method that returns the game's height. </p>
 
 <p>Implemented in <a class="el" href="classMinesweeperGame.html#a75b3df3a543babe3cf652c33fd499612">MinesweeperGame</a>.</p>
 
@@ -620,7 +620,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Getter method that returns the game's current theme </p>
+<p>Getter method that returns the game's current theme. </p>
 
 <p>Implemented in <a class="el" href="classMinesweeperGame.html#a3a3a3d1fb4f996fee20a3c6be5a74ee6">MinesweeperGame</a>.</p>
 
@@ -648,7 +648,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Getter method that returns the game's timer </p>
+<p>Getter method that returns the game's timer. </p>
 
 <p>Implemented in <a class="el" href="classMinesweeperGame.html#a2789ac6adb45f9a7635c48e74023f844">MinesweeperGame</a>.</p>
 
@@ -676,7 +676,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Getter method that returns the game's width </p>
+<p>Getter method that returns the game's width. </p>
 
 <p>Implemented in <a class="el" href="classMinesweeperGame.html#a881472e5ca3bb5c459f3a0d4457b3c90">MinesweeperGame</a>.</p>
 
@@ -704,7 +704,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to remove a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer from the game </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Method to remove a listener <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer from the game. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">listener</td><td>is a <a class="el" href="classIMinesweeperListener.html">IMinesweeperListener</a> pointer that handles notifications </td></tr>
   </table>
@@ -737,7 +737,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to restart the game </p>
+<p>Method to restart the game. </p>
 
 <p>Implemented in <a class="el" href="classMinesweeperGame.html#aa7b81f27fa16bcc51ca14cec1c4a8c83">MinesweeperGame</a>.</p>
 
@@ -765,7 +765,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html">MinesweeperGame</a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method that sets the argument cell to revealed and checks for surrounding cells to reveal </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Method that sets the argument cell to revealed and checks for surrounding cells to reveal. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html">ICell</a> pointer representing the cell to be set to unrevealed </td></tr>
   </table>
