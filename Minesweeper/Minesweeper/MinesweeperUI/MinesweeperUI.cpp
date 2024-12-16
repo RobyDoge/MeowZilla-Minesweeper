@@ -18,6 +18,7 @@ MinesweeperUI::MinesweeperUI(QWidget* parent)
 	ResizeWindow();
 
 	CreateMenuBar();
+	m_minesweeperGame->RestartGame();
 }
 
 MinesweeperUI::~MinesweeperUI()
