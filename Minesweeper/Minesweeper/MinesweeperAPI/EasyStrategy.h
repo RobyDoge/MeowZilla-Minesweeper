@@ -2,7 +2,7 @@
 #include "IStrategy.h"
 #include "string"
 
-/*! Class that implements the IStrategy interface and defines the easy strategy.*/
+//! Class that implements the IStrategy interface and defines the easy strategy.
 class EasyStrategy :public IStrategy
 {
 public:

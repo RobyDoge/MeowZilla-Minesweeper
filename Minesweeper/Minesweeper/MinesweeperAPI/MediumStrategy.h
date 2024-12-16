@@ -1,7 +1,7 @@
 #pragma once
 #include "IStrategy.h"
 
-/*! Class that implements the IStrategy interface and defines the medium strategy.*/
+//! Class that implements the IStrategy interface and defines the medium strategy.
 class MediumStrategy : public IStrategy
 {
 public:

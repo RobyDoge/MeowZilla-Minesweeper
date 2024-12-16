@@ -1,7 +1,7 @@
 #pragma once
 #include "IStrategy.h"
 
-/*! Class that implements the IStrategy interface and defines the custom strategy.*/
+//! Class that implements the IStrategy interface and defines the custom strategy.
 class CustomStrategy : public IStrategy
 {
 public:

@@ -9,7 +9,7 @@
 #include <string>
 #include <thread>
 
-/*! Class that implements the IMinesweeperGame interface.*/
+//! Class that implements the IMinesweeperGame interface.
 class MinesweeperGame:public IMinesweeperGame
 {
 public:

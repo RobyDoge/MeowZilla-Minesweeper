@@ -3,7 +3,7 @@
 #include <string>
 #include <optional>
 
-/*! Interface class for implementing the Strategy design pattern. */
+//! Interface class for implementing the Strategy design pattern. 
 class IStrategy
 {
 public:
