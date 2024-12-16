@@ -3,7 +3,6 @@
 #include "EasyStrategy.h"
 #include "HardStrategy.h"
 #include "MediumStrategy.h"
-#include "Themes.h"
 
 MinesweeperGame::MinesweeperGame()
 {
@@ -13,7 +12,7 @@ MinesweeperGame::MinesweeperGame()
 	m_minesNumber = 10;
 	m_flagsNumber = m_minesNumber;
 	m_gameState = EGameState::FIRSTCLICK;
-	m_theme = DARK_BLUE;
+	m_theme = "Dark Blue";
 	m_timer = -1;
 	SetUnrevealedCells();
 	ResetListeners();

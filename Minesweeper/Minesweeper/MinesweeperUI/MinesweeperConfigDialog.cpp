@@ -1,5 +1,4 @@
 ﻿#include "MinesweeperConfigDialog.h"
-#include "Themes.h"
 #include <QVBoxLayout>
 #include <QLabel>
 
@@ -33,10 +32,10 @@ MinesweeperConfigDialog::MinesweeperConfigDialog(QWidget* parent)
 	layout->addWidget(new QLabel("Theme:"));
 	m_themeComboBox = new QComboBox(this);
 	m_themeComboBox->addItems({
-		QString::fromStdString(DARK_BLUE),
-		QString::fromStdString(STARRY_SKY),
-		QString::fromStdString(AURORA_BOREALIS),
-		QString::fromStdString(CHRISTMAS)});
+		QString::fromStdString("Dark Blue"),
+		QString::fromStdString("Starry Sky"),
+		QString::fromStdString("Aurora Borealis"),
+		QString::fromStdString("Christmas") });
 
 	layout->addWidget(m_themeComboBox);
 

@@ -25,6 +25,6 @@ private:
 	int m_height = 16;
 	int m_minesNumber = 40;
 	int m_timer = 100;
-	std::string m_theme = DARK_BLUE;
+	std::string m_theme = "Dark Blue";
 };
 

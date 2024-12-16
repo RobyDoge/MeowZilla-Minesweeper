@@ -31,7 +31,6 @@
     <ClInclude Include="MediumStrategy.h" />
     <ClInclude Include="MinesweeperGame.h" />
     <ClInclude Include="MinesweeperCell.h" />
-    <ClInclude Include="Themes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EasyStrategy.cpp" />

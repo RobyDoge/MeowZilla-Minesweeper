@@ -25,6 +25,6 @@ private:
 	int m_height = 25;
 	int m_minesNumber = 99;
 	int m_timer = 100;
-	std::string m_theme = STARRY_SKY;
+	std::string m_theme = "Starry Sky";
 };
 
