@@ -2,10 +2,17 @@
 
 #include "ICell.h";
 
+//! Class that implements the ICell interface.
 class MinesweeperCell : public ICell
 {
 public:
+	/*!  Default Constructor for the Cell class. */
 	MinesweeperCell();
+	/*******************************************//**
+	*  Constructor for the Cell that sets the state to UNREVEALED, the number of adjacent mines to 0, and the row and column to the given values.
+		\param row is an integer representing the row of the cell
+		\param column is an integer representing the column of the cell
+	***********************************************/
 	MinesweeperCell(int row, int column);
 
 public:
