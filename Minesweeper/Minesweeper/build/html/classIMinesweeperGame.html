@@ -232,15 +232,17 @@ Static Public Member Functions</h2></td></tr>
 <br  />
 </p><ul>
 <li>Iterates through the cells surrounding the specified cell</li>
-<li>Increments the adjacent mine count for the given cell if any of the surrounding cells contain a mine or a flagged mine</li>
-<li>Checks all possible adjacent cells</li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
+<li>Increments the adjacent mine count for the given cell if any of the surrounding cells contain a mine or a flagged mine <br  />
+<br  />
+</li>
+<li>Checks all possible adjacent cells Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a>, private method. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html">ICell</a> pointer representing the cell to check for adjacent mines Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a>, private method. </td></tr>
+    <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html">ICell</a> pointer representing the cell to check for adjacent mines </td></tr>
   </table>
   </dd>
 </dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -307,7 +309,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Method to check if the game is won:</p><ul>
 <li>checking if all mines are flagged</li>
-<li>calls the EndGame method Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a>, private method. </li>
+<li>calls the EndGame method <br  />
+<br  />
+Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a> as private method. </li>
 </ul>
 
 </div>
@@ -338,7 +342,7 @@ Static Public Member Functions</h2></td></tr>
 <li>Notifies registered listeners about timer changes.</li>
 <li>If the timer reaches zero or the game state changes to a terminal state (not WIN or FIRSTCLICK), the game ends. <br  />
 <br  />
-Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a>, private method. </li>
+Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a> as a private method. </li>
 </ul>
 
 </div>
@@ -396,7 +400,7 @@ Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that 
 <li>Sets the game state to WIN if the game is won</li>
 <li>Loops through the listeners and calls the OnGameOver or OnWin method <br  />
 <br  />
-Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a>, private method. </li>
+Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a> as a private method. </li>
 </ul>
 
 </div>
@@ -462,7 +466,9 @@ Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that 
 </div><div class="memdoc">
 <p>Method to generate mines based on the clicked Cell row and column:</p><ul>
 <li>changes the game state to GAMEOVER</li>
-<li>calls the EndGame method </li>
+<li>calls the EndGame method <br  />
+<br  />
+ Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a> as a private method. </li>
 </ul>
 
 </div>
@@ -766,7 +772,9 @@ Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that 
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method that sets the argument cell to revealed and checks for surrounding cells to reveal. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Method that sets the argument cell to revealed and checks for surrounding cells to reveal. <br  />
+<br  />
+Implemented in <a class="el" href="classMinesweeperGame.html" title="Class that implements the IMinesweeperGame interface.">MinesweeperGame</a> as a private method. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html">ICell</a> pointer representing the cell to be set to unrevealed </td></tr>
   </table>

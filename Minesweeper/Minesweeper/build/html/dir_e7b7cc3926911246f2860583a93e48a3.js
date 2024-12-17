@@ -12,6 +12,5 @@ var dir_e7b7cc3926911246f2860583a93e48a3 =
     [ "IStrategy.h", "IStrategy_8h_source.html", null ],
     [ "MediumStrategy.h", "MediumStrategy_8h_source.html", null ],
     [ "MinesweeperCell.h", "MinesweeperCell_8h_source.html", null ],
-    [ "MinesweeperGame.h", "MinesweeperGame_8h_source.html", null ],
-    [ "Themes.h", "Themes_8h_source.html", null ]
+    [ "MinesweeperGame.h", "MinesweeperGame_8h_source.html", null ]
 ];

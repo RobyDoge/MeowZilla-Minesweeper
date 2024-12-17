@@ -1,7 +1,6 @@
 #pragma once
 
 #include "IMinesweeperListener.h"
-#include "ICell.h"
 #include "IStrategy.h"
 #include "EDifficulty.h"
 #include<memory>
@@ -38,15 +37,16 @@ public:
 	/*******************************************//**
  	*  Method to generate mines based on the clicked Cell row and column:
 		- changes the game state to GAMEOVER
-		- calls the EndGame method
+		- calls the EndGame method \n\n
+		Implemented in MinesweeperGame as a private method.
  	***********************************************/
 	virtual void GameOver() = 0;
 
 	/*******************************************//**
  	*  Method to check if the game is won:
 		- checking if all mines are flagged 
-		- calls the EndGame method
-	   Implemented in MinesweeperGame, private method.
+		- calls the EndGame method \n\n
+	   Implemented in MinesweeperGame as private method.
  	***********************************************/
 	virtual void CheckVictory() = 0;
 
@@ -55,7 +55,7 @@ public:
 		- Sets the game state to GAMEOVER if the game is over
 		- Sets the game state to WIN if the game is won
 		- Loops through the listeners and calls the OnGameOver or OnWin method \n\n
-	Implemented in MinesweeperGame, private method.
+	Implemented in MinesweeperGame as a private method.
  	***********************************************/
 	virtual void EndGame() = 0;
 
@@ -63,11 +63,12 @@ public:
 		Method to the timer in a separate thread, continuously updating the remaining time.
 		- Notifies registered listeners about timer changes.
 		- If the timer reaches zero or the game state changes to a terminal state (not WIN or FIRSTCLICK), the game ends. \n\n
-		Implemented in MinesweeperGame, private method.
+		Implemented in MinesweeperGame as a private method.
 	*/
 	virtual void CountdownTimer() = 0;
 
-	/*! Method that sets the argument cell to revealed and checks for surrounding cells to reveal.
+	/*! Method that sets the argument cell to revealed and checks for surrounding cells to reveal. \n\n
+		Implemented in MinesweeperGame as a private method.
 		\param cell is an ICell pointer representing the cell to be set to unrevealed
 	*/
 	virtual void RevealCells(CellPtr cell) = 0;
@@ -85,18 +86,18 @@ public:
 	/*!
 		Method that checks and counts the number of adjacent mines around a given cell. \n\n
 		- Iterates through the cells surrounding the specified cell 
-  		- Increments the adjacent mine count for the given cell if any of the surrounding cells contain a mine or a flagged mine
+  		- Increments the adjacent mine count for the given cell if any of the surrounding cells contain a mine or a flagged mine \n\n
 		- Checks all possible adjacent cells 
-
-		\param cell is an ICell pointer representing the cell to check for adjacent mines
 		Implemented in MinesweeperGame, private method.
+		\param cell is an ICell pointer representing the cell to check for adjacent mines
+		
 	*/
 	virtual void CheckAdjacentMines(CellPtr cell) = 0;
 
 	/*!
 		Method to calculate the number of mines adjacent to the given cell.
 		- Iterates over all neighboring cells and checks their states
-		- Increments the count of adjacent mines in the given cell if a mine is found
+		- Increments the count of adjacent mines in the given cell if a mine is found 
 		\param cell is an ICell pointer representing the cell to check for adjacent mines
 	*/
 	virtual void FlagCell(CellPtr cell) = 0;

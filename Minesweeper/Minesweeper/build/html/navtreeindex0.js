@@ -13,7 +13,6 @@ var NAVTREEINDEX0 =
 "MediumStrategy_8h_source.html":[1,0,0,10],
 "MinesweeperCell_8h_source.html":[1,0,0,11],
 "MinesweeperGame_8h_source.html":[1,0,0,12],
-"Themes_8h_source.html":[1,0,0,13],
 "annotated.html":[0,0],
 "classCustomStrategy.html":[0,0,0],
 "classCustomStrategy.html#a2dd0bda79d1f2512d72fa208040e0e98":[0,0,0,2],
