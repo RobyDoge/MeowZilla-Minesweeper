@@ -104,40 +104,260 @@ $(function(){initNavTree('classICell.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">ICell Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface class for the Cells of the game board implemented in the <a class="el" href="classMinesweeperCell.html" title="Class that implements the ICell interface.">MinesweeperCell</a> class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ICell_8h_source.html">ICell.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ICell:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classICell.png" usemap="#ICell_map" alt=""/>
   <map id="ICell_map" name="ICell_map">
-<area href="classMinesweeperCell.html" alt="MinesweeperCell" shape="rect" coords="0,56,110,80"/>
+<area href="classMinesweeperCell.html" title="Class that implements the ICell interface." alt="MinesweeperCell" shape="rect" coords="0,56,110,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a128606dc1c82cd8fdb6b093d1e7153cf" id="r_a128606dc1c82cd8fdb6b093d1e7153cf"><td class="memItemLeft" align="right" valign="top"><a id="a128606dc1c82cd8fdb6b093d1e7153cf" name="a128606dc1c82cd8fdb6b093d1e7153cf"></a>
-virtual ECellState&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> ()=0</td></tr>
+<tr class="memitem:a128606dc1c82cd8fdb6b093d1e7153cf" id="r_a128606dc1c82cd8fdb6b093d1e7153cf"><td class="memItemLeft" align="right" valign="top">virtual ECellState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a128606dc1c82cd8fdb6b093d1e7153cf">GetState</a> ()=0</td></tr>
 <tr class="separator:a128606dc1c82cd8fdb6b093d1e7153cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ffa1b5494e44aea7ef61244750eae0a" id="r_a6ffa1b5494e44aea7ef61244750eae0a"><td class="memItemLeft" align="right" valign="top"><a id="a6ffa1b5494e44aea7ef61244750eae0a" name="a6ffa1b5494e44aea7ef61244750eae0a"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetAdjacentMines</b> ()=0</td></tr>
+<tr class="memitem:a6ffa1b5494e44aea7ef61244750eae0a" id="r_a6ffa1b5494e44aea7ef61244750eae0a"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ffa1b5494e44aea7ef61244750eae0a">GetAdjacentMines</a> ()=0</td></tr>
 <tr class="separator:a6ffa1b5494e44aea7ef61244750eae0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c1424d6c78b294d436fad0c1358fcd4" id="r_a9c1424d6c78b294d436fad0c1358fcd4"><td class="memItemLeft" align="right" valign="top"><a id="a9c1424d6c78b294d436fad0c1358fcd4" name="a9c1424d6c78b294d436fad0c1358fcd4"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetRow</b> ()=0</td></tr>
+<tr class="memitem:a9c1424d6c78b294d436fad0c1358fcd4" id="r_a9c1424d6c78b294d436fad0c1358fcd4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c1424d6c78b294d436fad0c1358fcd4">GetRow</a> ()=0</td></tr>
 <tr class="separator:a9c1424d6c78b294d436fad0c1358fcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c138f030ed6da41e105de214a3eb207" id="r_a8c138f030ed6da41e105de214a3eb207"><td class="memItemLeft" align="right" valign="top"><a id="a8c138f030ed6da41e105de214a3eb207" name="a8c138f030ed6da41e105de214a3eb207"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumn</b> ()=0</td></tr>
+<tr class="memitem:a8c138f030ed6da41e105de214a3eb207" id="r_a8c138f030ed6da41e105de214a3eb207"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c138f030ed6da41e105de214a3eb207">GetColumn</a> ()=0</td></tr>
 <tr class="separator:a8c138f030ed6da41e105de214a3eb207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4e21506de97aa3bbc3aff45302647b2" id="r_ad4e21506de97aa3bbc3aff45302647b2"><td class="memItemLeft" align="right" valign="top"><a id="ad4e21506de97aa3bbc3aff45302647b2" name="ad4e21506de97aa3bbc3aff45302647b2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetState</b> (ECellState state)=0</td></tr>
+<tr class="memitem:ad4e21506de97aa3bbc3aff45302647b2" id="r_ad4e21506de97aa3bbc3aff45302647b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4e21506de97aa3bbc3aff45302647b2">SetState</a> (ECellState state)=0</td></tr>
 <tr class="separator:ad4e21506de97aa3bbc3aff45302647b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac08e809e8a8c8e08951fec14e55184d2" id="r_ac08e809e8a8c8e08951fec14e55184d2"><td class="memItemLeft" align="right" valign="top"><a id="ac08e809e8a8c8e08951fec14e55184d2" name="ac08e809e8a8c8e08951fec14e55184d2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAdjacentMine</b> ()=0</td></tr>
+<tr class="memitem:ac08e809e8a8c8e08951fec14e55184d2" id="r_ac08e809e8a8c8e08951fec14e55184d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac08e809e8a8c8e08951fec14e55184d2">AddAdjacentMine</a> ()=0</td></tr>
 <tr class="separator:ac08e809e8a8c8e08951fec14e55184d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc706c6cb4b089f99146e7430d3c1c4d" id="r_acc706c6cb4b089f99146e7430d3c1c4d"><td class="memItemLeft" align="right" valign="top"><a id="acc706c6cb4b089f99146e7430d3c1c4d" name="acc706c6cb4b089f99146e7430d3c1c4d"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsMine</b> () const =0</td></tr>
+<tr class="memitem:acc706c6cb4b089f99146e7430d3c1c4d" id="r_acc706c6cb4b089f99146e7430d3c1c4d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc706c6cb4b089f99146e7430d3c1c4d">IsMine</a> () const =0</td></tr>
 <tr class="separator:acc706c6cb4b089f99146e7430d3c1c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface class for the Cells of the game board implemented in the <a class="el" href="classMinesweeperCell.html" title="Class that implements the ICell interface.">MinesweeperCell</a> class. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac08e809e8a8c8e08951fec14e55184d2" name="ac08e809e8a8c8e08951fec14e55184d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac08e809e8a8c8e08951fec14e55184d2">&#9670;&#160;</a></span>AddAdjacentMine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ICell::AddAdjacentMine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to increase the number of mines adjacent to the cell.</p><ul>
+<li>Increments the inheriting class member variable m_adjacentMines by 1 </li>
+</ul>
+
+<p>Implemented in <a class="el" href="classMinesweeperCell.html#ab8060c0e7578b7fb18005a89a94c3b42">MinesweeperCell</a>.</p>
+
+</div>
+</div>
+<a id="a6ffa1b5494e44aea7ef61244750eae0a" name="a6ffa1b5494e44aea7ef61244750eae0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ffa1b5494e44aea7ef61244750eae0a">&#9670;&#160;</a></span>GetAdjacentMines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int ICell::GetAdjacentMines </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to get the number of adjacent mines to the cell.</p><ul>
+<li>Returns the number of adjacent mines to the cell </li>
+</ul>
+
+<p>Implemented in <a class="el" href="classMinesweeperCell.html#a445bb3414eea52813dc7f548f8d1239f">MinesweeperCell</a>.</p>
+
+</div>
+</div>
+<a id="a8c138f030ed6da41e105de214a3eb207" name="a8c138f030ed6da41e105de214a3eb207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c138f030ed6da41e105de214a3eb207">&#9670;&#160;</a></span>GetColumn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int ICell::GetColumn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to get the column of the cell.</p><ul>
+<li>Uses the m_column member variable of the inheriting class</li>
+<li>Returns the index of the cell's column </li>
+</ul>
+
+<p>Implemented in <a class="el" href="classMinesweeperCell.html#ae078fb0f5536430b30d65a828bbb7d5d">MinesweeperCell</a>.</p>
+
+</div>
+</div>
+<a id="a9c1424d6c78b294d436fad0c1358fcd4" name="a9c1424d6c78b294d436fad0c1358fcd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c1424d6c78b294d436fad0c1358fcd4">&#9670;&#160;</a></span>GetRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int ICell::GetRow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to get the row of the cell.</p><ul>
+<li>Uses the m_row member variable of the inheriting class</li>
+<li>Returns the index of the cell's row </li>
+</ul>
+
+<p>Implemented in <a class="el" href="classMinesweeperCell.html#ac4b1a3cb3d826b94fb2e55e3125b1044">MinesweeperCell</a>.</p>
+
+</div>
+</div>
+<a id="a128606dc1c82cd8fdb6b093d1e7153cf" name="a128606dc1c82cd8fdb6b093d1e7153cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a128606dc1c82cd8fdb6b093d1e7153cf">&#9670;&#160;</a></span>GetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ECellState ICell::GetState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to get the current state of the cell.</p><ul>
+<li>Returns the state of the cell which is an ECellState enum </li>
+</ul>
+
+<p>Implemented in <a class="el" href="classMinesweeperCell.html#afe1f1c92e4008be26a31cded84987ee3">MinesweeperCell</a>.</p>
+
+</div>
+</div>
+<a id="acc706c6cb4b089f99146e7430d3c1c4d" name="acc706c6cb4b089f99146e7430d3c1c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc706c6cb4b089f99146e7430d3c1c4d">&#9670;&#160;</a></span>IsMine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ICell::IsMine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to check if the cell is a mine.</p><ul>
+<li>Uses the m_state member variable of the inheriting class</li>
+<li>Returns true if the current state of the cell is MINE or FLAGGED_MINE, false otherwise </li>
+</ul>
+
+<p>Implemented in <a class="el" href="classMinesweeperCell.html#a7d854e7435cec40cfc0ea6988d7251b9">MinesweeperCell</a>.</p>
+
+</div>
+</div>
+<a id="ad4e21506de97aa3bbc3aff45302647b2" name="ad4e21506de97aa3bbc3aff45302647b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e21506de97aa3bbc3aff45302647b2">&#9670;&#160;</a></span>SetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ICell::SetState </td>
+          <td>(</td>
+          <td class="paramtype">ECellState</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to set the state of the cell.</p><ul>
+<li>Sets the state of the cell to the given state <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>is an ECellState argument representing the state to be set </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+<p>Implemented in <a class="el" href="classMinesweeperCell.html#a3270badb0058ae3f096a85fc5fe5ee8d">MinesweeperCell</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>MinesweeperAPI/<a class="el" href="ICell_8h_source.html">ICell.h</a></li>
 </ul>

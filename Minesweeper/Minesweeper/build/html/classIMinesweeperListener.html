@@ -104,28 +104,256 @@ $(function(){initNavTree('classIMinesweeperListener.html',''); initResizable(tru
   <div class="headertitle"><div class="title">IMinesweeperListener Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface class for the Minesweeper game listeners. Implemented in MinesweeperListenerUI class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="IMinesweeperListener_8h_source.html">IMinesweeperListener.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f383fce841f27bdf860debf2e8c7580" id="r_a0f383fce841f27bdf860debf2e8c7580"><td class="memItemLeft" align="right" valign="top"><a id="a0f383fce841f27bdf860debf2e8c7580" name="a0f383fce841f27bdf860debf2e8c7580"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCellImageChange</b> (CellPtr cell, EGameState gameState, std::string theme)=0</td></tr>
+<tr class="memitem:a0f383fce841f27bdf860debf2e8c7580" id="r_a0f383fce841f27bdf860debf2e8c7580"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f383fce841f27bdf860debf2e8c7580">OnCellImageChange</a> (CellPtr cell, EGameState gameState, std::string theme)=0</td></tr>
 <tr class="separator:a0f383fce841f27bdf860debf2e8c7580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85353fdd4683e860aec0fed3220214db" id="r_a85353fdd4683e860aec0fed3220214db"><td class="memItemLeft" align="right" valign="top"><a id="a85353fdd4683e860aec0fed3220214db" name="a85353fdd4683e860aec0fed3220214db"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFlagCountChanged</b> (int flagsNumber)=0</td></tr>
+<tr class="memitem:a85353fdd4683e860aec0fed3220214db" id="r_a85353fdd4683e860aec0fed3220214db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85353fdd4683e860aec0fed3220214db">OnFlagCountChanged</a> (int flagsNumber)=0</td></tr>
 <tr class="separator:a85353fdd4683e860aec0fed3220214db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee5ab9714f733d3751217088557a2a58" id="r_aee5ab9714f733d3751217088557a2a58"><td class="memItemLeft" align="right" valign="top"><a id="aee5ab9714f733d3751217088557a2a58" name="aee5ab9714f733d3751217088557a2a58"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimerChanged</b> (int timer)=0</td></tr>
+<tr class="memitem:aee5ab9714f733d3751217088557a2a58" id="r_aee5ab9714f733d3751217088557a2a58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee5ab9714f733d3751217088557a2a58">OnTimerChanged</a> (int timer)=0</td></tr>
 <tr class="separator:aee5ab9714f733d3751217088557a2a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f9ca72416eee663dddaeb9368609105" id="r_a6f9ca72416eee663dddaeb9368609105"><td class="memItemLeft" align="right" valign="top"><a id="a6f9ca72416eee663dddaeb9368609105" name="a6f9ca72416eee663dddaeb9368609105"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGameOver</b> ()=0</td></tr>
+<tr class="memitem:a6f9ca72416eee663dddaeb9368609105" id="r_a6f9ca72416eee663dddaeb9368609105"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f9ca72416eee663dddaeb9368609105">OnGameOver</a> ()=0</td></tr>
 <tr class="separator:a6f9ca72416eee663dddaeb9368609105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b8cc73caed437ffbc403ca4c566e09" id="r_a10b8cc73caed437ffbc403ca4c566e09"><td class="memItemLeft" align="right" valign="top"><a id="a10b8cc73caed437ffbc403ca4c566e09" name="a10b8cc73caed437ffbc403ca4c566e09"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWin</b> ()=0</td></tr>
+<tr class="memitem:a10b8cc73caed437ffbc403ca4c566e09" id="r_a10b8cc73caed437ffbc403ca4c566e09"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10b8cc73caed437ffbc403ca4c566e09">OnWin</a> ()=0</td></tr>
 <tr class="separator:a10b8cc73caed437ffbc403ca4c566e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc62f9202c4c51d95a3cfb2f65486c59" id="r_adc62f9202c4c51d95a3cfb2f65486c59"><td class="memItemLeft" align="right" valign="top"><a id="adc62f9202c4c51d95a3cfb2f65486c59" name="adc62f9202c4c51d95a3cfb2f65486c59"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettingsUpdated</b> (int width, int height, int minesNumber, std::string theme, int timer)=0</td></tr>
+<tr class="memitem:adc62f9202c4c51d95a3cfb2f65486c59" id="r_adc62f9202c4c51d95a3cfb2f65486c59"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc62f9202c4c51d95a3cfb2f65486c59">OnSettingsUpdated</a> (int width, int height, int minesNumber, std::string theme, int timer)=0</td></tr>
 <tr class="separator:adc62f9202c4c51d95a3cfb2f65486c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55140cc69cc7044cc4d1cddf545fbd5a" id="r_a55140cc69cc7044cc4d1cddf545fbd5a"><td class="memItemLeft" align="right" valign="top"><a id="a55140cc69cc7044cc4d1cddf545fbd5a" name="a55140cc69cc7044cc4d1cddf545fbd5a"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IMinesweeperListener</b> ()=default</td></tr>
+<tr class="memdesc:a55140cc69cc7044cc4d1cddf545fbd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for the <a class="el" href="classIMinesweeperListener.html" title="Interface class for the Minesweeper game listeners. Implemented in MinesweeperListenerUI class.">IMinesweeperListener</a> interface. <br /></td></tr>
+<tr class="separator:a55140cc69cc7044cc4d1cddf545fbd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface class for the Minesweeper game listeners. Implemented in MinesweeperListenerUI class. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0f383fce841f27bdf860debf2e8c7580" name="a0f383fce841f27bdf860debf2e8c7580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f383fce841f27bdf860debf2e8c7580">&#9670;&#160;</a></span>OnCellImageChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IMinesweeperListener::OnCellImageChange </td>
+          <td>(</td>
+          <td class="paramtype">CellPtr</td>          <td class="paramname"><span class="paramname"><em>cell</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EGameState</td>          <td class="paramname"><span class="paramname"><em>gameState</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>theme</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to notify the listeners that a cell has changed its state.</p><ul>
+<li>Emits a signal with the cell, the game state, and the theme <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell</td><td>is an <a class="el" href="classICell.html" title="Interface class for the Cells of the game board implemented in the MinesweeperCell class.">ICell</a> pointer representing the cell that has changed </td></tr>
+    <tr><td class="paramname">gameState</td><td>is an EGameState enum representing the state of the game </td></tr>
+    <tr><td class="paramname">theme</td><td>is a string representing the theme of the game </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a85353fdd4683e860aec0fed3220214db" name="a85353fdd4683e860aec0fed3220214db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85353fdd4683e860aec0fed3220214db">&#9670;&#160;</a></span>OnFlagCountChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IMinesweeperListener::OnFlagCountChanged </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>flagsNumber</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to notify the listeners that the number of flags has changed.</p><ul>
+<li>Emits a signal with the number of flags <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flagsNumber</td><td>is an integer representing the number of flags in the game </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a6f9ca72416eee663dddaeb9368609105" name="a6f9ca72416eee663dddaeb9368609105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9ca72416eee663dddaeb9368609105">&#9670;&#160;</a></span>OnGameOver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IMinesweeperListener::OnGameOver </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to notify the listeners that the game is over. </p>
+
+</div>
+</div>
+<a id="adc62f9202c4c51d95a3cfb2f65486c59" name="adc62f9202c4c51d95a3cfb2f65486c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc62f9202c4c51d95a3cfb2f65486c59">&#9670;&#160;</a></span>OnSettingsUpdated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IMinesweeperListener::OnSettingsUpdated </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minesNumber</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>theme</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to notify the listeners that the settings have been updated.</p><ul>
+<li>Emits a signal with the width, height, mines number, theme, and timer <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>is an integer representing the width of the game window </td></tr>
+    <tr><td class="paramname">height</td><td>is an integer representing the height of the game window </td></tr>
+    <tr><td class="paramname">minesNumber</td><td>is an integer representing the number of mines in the game </td></tr>
+    <tr><td class="paramname">theme</td><td>is a string representing the theme of the game </td></tr>
+    <tr><td class="paramname">timer</td><td>is an integer representing the timer of the game </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aee5ab9714f733d3751217088557a2a58" name="aee5ab9714f733d3751217088557a2a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee5ab9714f733d3751217088557a2a58">&#9670;&#160;</a></span>OnTimerChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IMinesweeperListener::OnTimerChanged </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to notify the listeners that the timer has changed.</p><ul>
+<li>Emits a signal with the timer <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>is an integer representing the timer of the game </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a10b8cc73caed437ffbc403ca4c566e09" name="a10b8cc73caed437ffbc403ca4c566e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10b8cc73caed437ffbc403ca4c566e09">&#9670;&#160;</a></span>OnWin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IMinesweeperListener::OnWin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method to notify the listeners that the game is won. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>MinesweeperAPI/<a class="el" href="IMinesweeperListener_8h_source.html">IMinesweeperListener.h</a></li>
 </ul>

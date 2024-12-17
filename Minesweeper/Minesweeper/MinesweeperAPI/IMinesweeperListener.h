@@ -34,12 +34,12 @@ public:
 
 	/*******************************************//**
 	*  Method to notify the listeners that the game is over.
-	/***********************************************/
+	**********************************************/
 	virtual void OnGameOver() = 0;
 
 	/*******************************************//**
 	*  Method to notify the listeners that the game is won.
-	/***********************************************/
+	**********************************************/
 	virtual void OnWin() = 0;
 
 	/*******************************************//**
@@ -50,7 +50,7 @@ public:
 		\param minesNumber is an integer representing the number of mines in the game
 		\param theme is a string representing the theme of the game
 		\param timer is an integer representing the timer of the game
-	/***********************************************/
+	**********************************************/
 	virtual void OnSettingsUpdated(int width, int height, int minesNumber, std::string theme, int timer) = 0;
 
 	//! Virtual destructor for the IMinesweeperListener interface.

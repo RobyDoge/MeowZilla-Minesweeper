@@ -108,21 +108,40 @@ $(function(){initNavTree('ICell_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span>CellPtr = std::shared_ptr &lt;class ICell&gt;;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classICell.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classICell.html">ICell</a></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">virtual</span> ECellState GetState() = 0;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetAdjacentMines() = 0;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetRow() = 0;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetColumn() = 0;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetState(ECellState state) = 0;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddAdjacentMine() = 0;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsMine() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classICell.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="classICell.html">ICell</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">    /*******************************************/</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classICell.html#a128606dc1c82cd8fdb6b093d1e7153cf">   16</a></span>    <span class="keyword">virtual</span> ECellState <a class="code hl_function" href="classICell.html#a128606dc1c82cd8fdb6b093d1e7153cf">GetState</a>() = 0;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">    /*******************************************/</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classICell.html#a6ffa1b5494e44aea7ef61244750eae0a">   22</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classICell.html#a6ffa1b5494e44aea7ef61244750eae0a">GetAdjacentMines</a>() = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">    /*******************************************/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classICell.html#a9c1424d6c78b294d436fad0c1358fcd4">   29</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classICell.html#a9c1424d6c78b294d436fad0c1358fcd4">GetRow</a>() = 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">    /*******************************************/</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classICell.html#a8c138f030ed6da41e105de214a3eb207">   36</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classICell.html#a8c138f030ed6da41e105de214a3eb207">GetColumn</a>() = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">    /*******************************************/</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classICell.html#ad4e21506de97aa3bbc3aff45302647b2">   43</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classICell.html#ad4e21506de97aa3bbc3aff45302647b2">SetState</a>(ECellState state) = 0;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    /*******************************************/</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classICell.html#ac08e809e8a8c8e08951fec14e55184d2">   49</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classICell.html#ac08e809e8a8c8e08951fec14e55184d2">AddAdjacentMine</a>() = 0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    /*******************************************/</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classICell.html#acc706c6cb4b089f99146e7430d3c1c4d">   56</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classICell.html#acc706c6cb4b089f99146e7430d3c1c4d">IsMine</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 </div>
-<div class="ttc" id="aclassICell_html"><div class="ttname"><a href="classICell.html">ICell</a></div><div class="ttdef"><b>Definition</b> ICell.h:9</div></div>
+<div class="ttc" id="aclassICell_html"><div class="ttname"><a href="classICell.html">ICell</a></div><div class="ttdoc">Interface class for the Cells of the game board implemented in the MinesweeperCell class.</div><div class="ttdef"><b>Definition</b> ICell.h:10</div></div>
+<div class="ttc" id="aclassICell_html_a128606dc1c82cd8fdb6b093d1e7153cf"><div class="ttname"><a href="classICell.html#a128606dc1c82cd8fdb6b093d1e7153cf">ICell::GetState</a></div><div class="ttdeci">virtual ECellState GetState()=0</div></div>
+<div class="ttc" id="aclassICell_html_a6ffa1b5494e44aea7ef61244750eae0a"><div class="ttname"><a href="classICell.html#a6ffa1b5494e44aea7ef61244750eae0a">ICell::GetAdjacentMines</a></div><div class="ttdeci">virtual int GetAdjacentMines()=0</div></div>
+<div class="ttc" id="aclassICell_html_a8c138f030ed6da41e105de214a3eb207"><div class="ttname"><a href="classICell.html#a8c138f030ed6da41e105de214a3eb207">ICell::GetColumn</a></div><div class="ttdeci">virtual int GetColumn()=0</div></div>
+<div class="ttc" id="aclassICell_html_a9c1424d6c78b294d436fad0c1358fcd4"><div class="ttname"><a href="classICell.html#a9c1424d6c78b294d436fad0c1358fcd4">ICell::GetRow</a></div><div class="ttdeci">virtual int GetRow()=0</div></div>
+<div class="ttc" id="aclassICell_html_ac08e809e8a8c8e08951fec14e55184d2"><div class="ttname"><a href="classICell.html#ac08e809e8a8c8e08951fec14e55184d2">ICell::AddAdjacentMine</a></div><div class="ttdeci">virtual void AddAdjacentMine()=0</div></div>
+<div class="ttc" id="aclassICell_html_acc706c6cb4b089f99146e7430d3c1c4d"><div class="ttname"><a href="classICell.html#acc706c6cb4b089f99146e7430d3c1c4d">ICell::IsMine</a></div><div class="ttdeci">virtual bool IsMine() const =0</div></div>
+<div class="ttc" id="aclassICell_html_ad4e21506de97aa3bbc3aff45302647b2"><div class="ttname"><a href="classICell.html#ad4e21506de97aa3bbc3aff45302647b2">ICell::SetState</a></div><div class="ttdeci">virtual void SetState(ECellState state)=0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

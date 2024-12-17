@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['removeminesweeperlistener_0',['RemoveMinesweeperListener',['../classIMinesweeperGame.html#ae2324130b040af5a5642bce7e66cea8d',1,'IMinesweeperGame::RemoveMinesweeperListener()'],['../classMinesweeperGame.html#a02ba6185b1f9d73fc0463bd6b4a821c6',1,'MinesweeperGame::RemoveMinesweeperListener()']]],
-  ['restartgame_1',['RestartGame',['../classIMinesweeperGame.html#a8d7c1ab751bb5bf35fdcdf60fe00c0c8',1,'IMinesweeperGame::RestartGame()'],['../classMinesweeperGame.html#aa7b81f27fa16bcc51ca14cec1c4a8c83',1,'MinesweeperGame::RestartGame()']]],
-  ['revealcells_2',['RevealCells',['../classIMinesweeperGame.html#a75ea7ab1b31b84c228f7bff857aface3',1,'IMinesweeperGame::RevealCells()'],['../classMinesweeperGame.html#acfe0755d480f7b656a73c670d5c192d5',1,'MinesweeperGame::RevealCells()']]]
+  ['oncellimagechange_0',['OnCellImageChange',['../classIMinesweeperListener.html#a0f383fce841f27bdf860debf2e8c7580',1,'IMinesweeperListener']]],
+  ['onflagcountchanged_1',['OnFlagCountChanged',['../classIMinesweeperListener.html#a85353fdd4683e860aec0fed3220214db',1,'IMinesweeperListener']]],
+  ['ongameover_2',['OnGameOver',['../classIMinesweeperListener.html#a6f9ca72416eee663dddaeb9368609105',1,'IMinesweeperListener']]],
+  ['onsettingsupdated_3',['OnSettingsUpdated',['../classIMinesweeperListener.html#adc62f9202c4c51d95a3cfb2f65486c59',1,'IMinesweeperListener']]],
+  ['ontimerchanged_4',['OnTimerChanged',['../classIMinesweeperListener.html#aee5ab9714f733d3751217088557a2a58',1,'IMinesweeperListener']]],
+  ['onwin_5',['OnWin',['../classIMinesweeperListener.html#a10b8cc73caed437ffbc403ca4c566e09',1,'IMinesweeperListener']]]
 ];
